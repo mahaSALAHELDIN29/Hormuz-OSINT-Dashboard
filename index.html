@@ -57,6 +57,7 @@
         .col-6 { grid-column: span 6; } .col-4 { grid-column: span 4; }
         .col-3 { grid-column: span 3; }
 
+        .chart-desc { font-size: 0.8rem; color: var(--text-muted); margin-top: -10px; margin-bottom: 15px; line-height: 1.4; font-family: 'Inter', sans-serif; }
         .chart-container { width: 100%; min-height: 350px; flex: 1; position: relative; }
         
         /* Node Graph */
@@ -97,41 +98,49 @@
             <!-- Timeline -->
             <div class="panel col-8">
                 <div class="panel-title">Article Volume Trajectory</div>
+                <p class="chart-desc">Tracks the daily frequency of news articles to identify major media spikes and crisis milestones.</p>
                 <div class="chart-container" id="chart-timeline"></div>
             </div>
 
             <!-- Radar -->
             <div class="panel col-4">
                 <div class="panel-title">Thematic Clustering</div>
+                <p class="chart-desc">Categorizes the news corpus into 4 dominant pillars: Military, Economic, Diplomatic, and Maritime.</p>
                 <div class="chart-container" id="chart-radar"></div>
             </div>
 
             <!-- Entities -->
             <div class="panel col-4">
                 <div class="panel-title" style="color: var(--accent-red);">Top State Actors (GPE)</div>
+                <p class="chart-desc">Extracts sovereign states and geopolitical entities most frequently mentioned using NLP.</p>
                 <div class="chart-container" id="chart-gpe" style="min-height: 250px;"></div>
             </div>
             <div class="panel col-4">
                 <div class="panel-title" style="color: var(--accent-gold);">Top Organizations</div>
+                <p class="chart-desc">Highlights military groups, alliances, and agencies driving the geopolitical narrative.</p>
                 <div class="chart-container" id="chart-org" style="min-height: 250px;"></div>
             </div>
             <div class="panel col-4">
                 <div class="panel-title">Key Figures</div>
+                <p class="chart-desc">Identifies the individual leaders, politicians, and commanders dominating the news cycle.</p>
                 <div class="chart-container" id="chart-person" style="min-height: 250px;"></div>
             </div>
 
             <!-- WordCloud & Sentiment -->
             <div class="panel col-8">
                 <div class="panel-title">Semantic Field (Word Cloud)</div>
+                <p class="chart-desc">Visualizes the most frequently occurring vocabulary across all articles, filtering out common noise.</p>
                 <div class="chart-container" id="wordcloud" style="min-height: 450px;"></div>
             </div>
             <div class="panel col-4" style="gap: 20px;">
                 <div style="flex:1;">
                     <div class="panel-title">Polarity Matrix</div>
+                    <p class="chart-desc">Measures whether the overall tone of the coverage leans towards positive, negative, or neutral.</p>
                     <div class="chart-container" id="chart-sentiment" style="min-height: 200px;"></div>
                 </div>
                 <div style="flex:1;">
                     <div class="panel-title">Narrative Framing</div>
+                    <p class="chart-desc">Analyzes lexical framing to see if the media uses fear-mongering or diplomatic/calming language.</p>
                     <div class="chart-container" id="chart-framing" style="min-height: 200px;"></div>
                 </div>
             </div>
@@ -143,40 +152,48 @@
             <!-- Escalation Index -->
             <div class="panel col-12">
                 <div class="panel-title" style="color: var(--accent-red);">Predictive Escalation Index vs Volume</div>
+                <p class="chart-desc">A custom algorithm combining volume, sentiment, and fear keywords to flag media build-ups predicting kinetic escalation.</p>
                 <div class="chart-container" id="chart-escalation"></div>
             </div>
 
             <!-- Network & Map -->
             <div class="panel col-6">
                 <div class="panel-title" style="color: var(--accent-purple);">Entity Network (Co-occurrence)</div>
+                <p class="chart-desc">A force-directed graph mapping alliances and adversaries by connecting entities mentioned in the same context.</p>
                 <div class="chart-container" id="d3-network" style="background: rgba(0,0,0,0.3); border-radius: 8px;"></div>
             </div>
             <div class="panel col-6">
                 <div class="panel-title" style="color: var(--accent-green);">Geospatial Ripple Effect (GPE Map)</div>
+                <p class="chart-desc">Maps the global reach of the crisis by plotting the geographic coordinates of all sovereign entities mentioned.</p>
                 <div class="chart-container" id="map" style="border-radius: 8px; z-index: 1;"></div>
             </div>
 
             <!-- Topics, Bigrams, Quotes, Bias -->
             <div class="panel col-4">
                 <div class="panel-title">Latent Topics (K-Means)</div>
+                <p class="chart-desc">Uses unsupervised Machine Learning to discover hidden, organic narratives spanning the corpus.</p>
                 <div id="topics-list" style="font-family: 'JetBrains Mono'; font-size: 0.85rem; color: var(--text-muted); line-height: 1.8;"></div>
             </div>
             <div class="panel col-4">
                 <div class="panel-title">Dominant Narratives (Bigrams)</div>
+                <p class="chart-desc">Extracts the most common two-word phrases to reveal the core subjects being discussed.</p>
                 <div id="bigrams-list" style="font-family: 'JetBrains Mono'; font-size: 0.9rem;"></div>
             </div>
             <div class="panel col-4">
                 <div class="panel-title">Media Polarization (Fear vs Sentiment)</div>
+                <p class="chart-desc">Ranks the top news agencies based on their reliance on fear-mongering and negative tone.</p>
                 <div class="chart-container" id="chart-bias" style="min-height: 250px;"></div>
             </div>
 
             <div class="panel col-12" style="flex-direction: row; align-items: center; justify-content: space-around; padding: 40px;">
                 <div style="text-align:center;">
-                    <h3 style="color:var(--text-muted);">Journalist Context Sentiment</h3>
+                    <h3 style="color:var(--text-muted); margin-bottom: 5px;">Journalist Context Sentiment</h3>
+                    <p class="chart-desc">The average sentiment of the text written by the reporters.</p>
                     <div id="sent-journalist" style="font-size: 3.5rem; font-weight:900; color:var(--accent-cyan);">--</div>
                 </div>
                 <div style="text-align:center;">
-                    <h3 style="color:var(--text-muted);">Direct Quotes Sentiment</h3>
+                    <h3 style="color:var(--text-muted); margin-bottom: 5px;">Direct Quotes Sentiment</h3>
+                    <p class="chart-desc">The sentiment isolated strictly from quotes attributed to officials.</p>
                     <div id="sent-quotes" style="font-size: 3.5rem; font-weight:900; color:var(--accent-gold);">--</div>
                 </div>
             </div>
@@ -207,6 +224,11 @@
                     </ul>
                 </div>
             </div>
+        </div>
+        <div style="margin-top: 50px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center;">
+            <p style="color: var(--accent-gold); font-family: 'JetBrains Mono'; font-size: 0.9rem;">
+                This tool was developed by Osama Al-Sayyad & Maha Salaheldin
+            </p>
         </div>
     </div>
 
