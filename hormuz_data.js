@@ -1,527 +1,527 @@
 const HORMUZ_DATA = {
     "metadata": {
-        "last_updated": "2026-05-11 00:36:46",
+        "last_updated": "2026-05-11 01:45:41",
         "total_articles": 4532,
         "date_range": "Feb 27, 2026 to May 11, 2026"
     },
     "timeline": [
         {
             "date": "2026-02-27",
-            "volume": 78,
-            "avg_sentiment": 0.05,
-            "fear_count": 18,
-            "escalation_index": 72.6
+            "volume": 80,
+            "avg_sentiment": 0.09,
+            "fear_count": 14,
+            "escalation_index": 63.7
         },
         {
             "date": "2026-02-28",
-            "volume": 27,
-            "avg_sentiment": 0.07,
-            "fear_count": 13,
-            "escalation_index": 36.2
+            "volume": 53,
+            "avg_sentiment": -0.13,
+            "fear_count": 18,
+            "escalation_index": 68.8
         },
         {
             "date": "2026-03-01",
-            "volume": 30,
-            "avg_sentiment": -0.11,
-            "fear_count": 9,
-            "escalation_index": 38.7
+            "volume": 39,
+            "avg_sentiment": -0.06,
+            "fear_count": 12,
+            "escalation_index": 46.5
         },
         {
             "date": "2026-03-02",
-            "volume": 78,
-            "avg_sentiment": -0.13,
-            "fear_count": 12,
-            "escalation_index": 69.3
+            "volume": 73,
+            "avg_sentiment": 0.1,
+            "fear_count": 13,
+            "escalation_index": 57.7
         },
         {
             "date": "2026-03-03",
-            "volume": 26,
-            "avg_sentiment": -0.06,
-            "fear_count": 19,
-            "escalation_index": 54.0
+            "volume": 59,
+            "avg_sentiment": -0.04,
+            "fear_count": 9,
+            "escalation_index": 49.6
         },
         {
             "date": "2026-03-04",
-            "volume": 71,
-            "avg_sentiment": -0.01,
-            "fear_count": 16,
-            "escalation_index": 67.9
-        },
-        {
-            "date": "2026-03-05",
-            "volume": 33,
-            "avg_sentiment": 0.05,
-            "fear_count": 14,
-            "escalation_index": 42.0
-        },
-        {
-            "date": "2026-03-06",
-            "volume": 50,
-            "avg_sentiment": -0.06,
-            "fear_count": 17,
-            "escalation_index": 62.1
-        },
-        {
-            "date": "2026-03-07",
-            "volume": 45,
-            "avg_sentiment": -0.08,
-            "fear_count": 16,
-            "escalation_index": 58.4
-        },
-        {
-            "date": "2026-03-08",
-            "volume": 36,
-            "avg_sentiment": 0.09,
-            "fear_count": 18,
-            "escalation_index": 49.3
-        },
-        {
-            "date": "2026-03-09",
-            "volume": 71,
-            "avg_sentiment": -0.17,
-            "fear_count": 13,
-            "escalation_index": 70.0
-        },
-        {
-            "date": "2026-03-10",
-            "volume": 73,
-            "avg_sentiment": -0.0,
-            "fear_count": 8,
-            "escalation_index": 52.7
-        },
-        {
-            "date": "2026-03-11",
-            "volume": 30,
-            "avg_sentiment": 0.07,
-            "fear_count": 10,
-            "escalation_index": 31.7
-        },
-        {
-            "date": "2026-03-12",
-            "volume": 39,
-            "avg_sentiment": -0.09,
-            "fear_count": 17,
+            "volume": 29,
+            "avg_sentiment": -0.11,
+            "fear_count": 19,
             "escalation_index": 58.0
         },
         {
-            "date": "2026-03-13",
-            "volume": 56,
-            "avg_sentiment": 0.02,
+            "date": "2026-03-05",
+            "volume": 26,
+            "avg_sentiment": 0.04,
             "fear_count": 6,
-            "escalation_index": 39.2
+            "escalation_index": 23.2
+        },
+        {
+            "date": "2026-03-06",
+            "volume": 21,
+            "avg_sentiment": -0.19,
+            "fear_count": 12,
+            "escalation_index": 44.2
+        },
+        {
+            "date": "2026-03-07",
+            "volume": 70,
+            "avg_sentiment": -0.14,
+            "fear_count": 7,
+            "escalation_index": 55.9
+        },
+        {
+            "date": "2026-03-08",
+            "volume": 22,
+            "avg_sentiment": -0.06,
+            "fear_count": 12,
+            "escalation_index": 38.0
+        },
+        {
+            "date": "2026-03-09",
+            "volume": 73,
+            "avg_sentiment": -0.09,
+            "fear_count": 17,
+            "escalation_index": 75.1
+        },
+        {
+            "date": "2026-03-10",
+            "volume": 50,
+            "avg_sentiment": -0.08,
+            "fear_count": 8,
+            "escalation_index": 45.2
+        },
+        {
+            "date": "2026-03-11",
+            "volume": 72,
+            "avg_sentiment": -0.03,
+            "fear_count": 13,
+            "escalation_index": 63.5
+        },
+        {
+            "date": "2026-03-12",
+            "volume": 50,
+            "avg_sentiment": 0.04,
+            "fear_count": 20,
+            "escalation_index": 63.0
+        },
+        {
+            "date": "2026-03-13",
+            "volume": 51,
+            "avg_sentiment": -0.05,
+            "fear_count": 14,
+            "escalation_index": 56.2
         },
         {
             "date": "2026-03-14",
-            "volume": 49,
-            "avg_sentiment": -0.2,
-            "fear_count": 11,
-            "escalation_index": 56.4
+            "volume": 22,
+            "avg_sentiment": -0.0,
+            "fear_count": 12,
+            "escalation_index": 35.2
         },
         {
             "date": "2026-03-15",
-            "volume": 58,
-            "avg_sentiment": -0.12,
-            "fear_count": 17,
-            "escalation_index": 69.0
+            "volume": 70,
+            "avg_sentiment": -0.16,
+            "fear_count": 11,
+            "escalation_index": 65.1
         },
         {
             "date": "2026-03-16",
-            "volume": 56,
-            "avg_sentiment": -0.15,
-            "fear_count": 15,
-            "escalation_index": 65.5
+            "volume": 77,
+            "avg_sentiment": 0.02,
+            "fear_count": 18,
+            "escalation_index": 73.5
         },
         {
             "date": "2026-03-17",
-            "volume": 73,
-            "avg_sentiment": 0.07,
-            "fear_count": 12,
-            "escalation_index": 57.0
+            "volume": 25,
+            "avg_sentiment": -0.13,
+            "fear_count": 7,
+            "escalation_index": 32.9
         },
         {
             "date": "2026-03-18",
-            "volume": 33,
-            "avg_sentiment": -0.08,
-            "fear_count": 16,
-            "escalation_index": 52.5
+            "volume": 54,
+            "avg_sentiment": -0.11,
+            "fear_count": 11,
+            "escalation_index": 54.7
         },
         {
             "date": "2026-03-19",
-            "volume": 42,
-            "avg_sentiment": 0.09,
-            "fear_count": 16,
-            "escalation_index": 48.7
+            "volume": 37,
+            "avg_sentiment": -0.16,
+            "fear_count": 17,
+            "escalation_index": 60.3
         },
         {
             "date": "2026-03-20",
-            "volume": 30,
-            "avg_sentiment": -0.01,
-            "fear_count": 19,
-            "escalation_index": 53.6
+            "volume": 45,
+            "avg_sentiment": 0.09,
+            "fear_count": 14,
+            "escalation_index": 46.1
         },
         {
             "date": "2026-03-21",
-            "volume": 71,
-            "avg_sentiment": -0.07,
-            "fear_count": 18,
-            "escalation_index": 74.8
+            "volume": 60,
+            "avg_sentiment": -0.14,
+            "fear_count": 19,
+            "escalation_index": 75.1
         },
         {
             "date": "2026-03-22",
-            "volume": 79,
-            "avg_sentiment": -0.19,
-            "fear_count": 6,
-            "escalation_index": 61.0
+            "volume": 27,
+            "avg_sentiment": -0.05,
+            "fear_count": 18,
+            "escalation_index": 52.0
         },
         {
             "date": "2026-03-23",
-            "volume": 46,
-            "avg_sentiment": -0.14,
-            "fear_count": 12,
-            "escalation_index": 54.2
+            "volume": 80,
+            "avg_sentiment": -0.05,
+            "fear_count": 11,
+            "escalation_index": 64.4
         },
         {
             "date": "2026-03-24",
-            "volume": 59,
-            "avg_sentiment": -0.05,
-            "fear_count": 13,
-            "escalation_index": 57.9
+            "volume": 63,
+            "avg_sentiment": -0.16,
+            "fear_count": 17,
+            "escalation_index": 73.7
         },
         {
             "date": "2026-03-25",
-            "volume": 32,
+            "volume": 28,
             "avg_sentiment": -0.17,
-            "fear_count": 13,
-            "escalation_index": 50.4
+            "fear_count": 16,
+            "escalation_index": 54.3
         },
         {
             "date": "2026-03-26",
-            "volume": 73,
-            "avg_sentiment": -0.14,
-            "fear_count": 14,
-            "escalation_index": 71.4
+            "volume": 64,
+            "avg_sentiment": 0.02,
+            "fear_count": 13,
+            "escalation_index": 57.1
         },
         {
             "date": "2026-03-27",
             "volume": 71,
-            "avg_sentiment": -0.08,
-            "fear_count": 11,
-            "escalation_index": 61.5
+            "avg_sentiment": 0.07,
+            "fear_count": 8,
+            "escalation_index": 47.8
         },
         {
             "date": "2026-03-28",
-            "volume": 47,
-            "avg_sentiment": 0.01,
-            "fear_count": 5,
-            "escalation_index": 33.2
+            "volume": 50,
+            "avg_sentiment": 0.06,
+            "fear_count": 8,
+            "escalation_index": 38.1
         },
         {
             "date": "2026-03-29",
-            "volume": 78,
-            "avg_sentiment": -0.08,
-            "fear_count": 10,
-            "escalation_index": 62.8
+            "volume": 46,
+            "avg_sentiment": -0.04,
+            "fear_count": 8,
+            "escalation_index": 41.1
         },
         {
             "date": "2026-03-30",
-            "volume": 54,
-            "avg_sentiment": 0.02,
-            "fear_count": 17,
-            "escalation_index": 60.2
+            "volume": 45,
+            "avg_sentiment": 0.03,
+            "fear_count": 9,
+            "escalation_index": 39.1
         },
         {
             "date": "2026-03-31",
-            "volume": 47,
-            "avg_sentiment": -0.13,
-            "fear_count": 8,
-            "escalation_index": 45.9
+            "volume": 75,
+            "avg_sentiment": -0.12,
+            "fear_count": 6,
+            "escalation_index": 55.4
         },
         {
             "date": "2026-04-01",
-            "volume": 50,
-            "avg_sentiment": -0.11,
-            "fear_count": 9,
-            "escalation_index": 48.6
+            "volume": 79,
+            "avg_sentiment": -0.07,
+            "fear_count": 6,
+            "escalation_index": 54.9
         },
         {
             "date": "2026-04-02",
-            "volume": 23,
-            "avg_sentiment": -0.18,
+            "volume": 62,
+            "avg_sentiment": -0.04,
             "fear_count": 8,
-            "escalation_index": 36.5
+            "escalation_index": 49.0
         },
         {
             "date": "2026-04-03",
-            "volume": 73,
-            "avg_sentiment": -0.13,
-            "fear_count": 14,
-            "escalation_index": 71.1
+            "volume": 74,
+            "avg_sentiment": -0.03,
+            "fear_count": 20,
+            "escalation_index": 78.6
         },
         {
             "date": "2026-04-04",
-            "volume": 41,
-            "avg_sentiment": 0.07,
-            "fear_count": 19,
-            "escalation_index": 54.8
+            "volume": 44,
+            "avg_sentiment": -0.1,
+            "fear_count": 15,
+            "escalation_index": 57.2
         },
         {
             "date": "2026-04-05",
-            "volume": 189,
-            "avg_sentiment": -0.58,
-            "fear_count": 99,
+            "volume": 169,
+            "avg_sentiment": -0.35,
+            "fear_count": 90,
             "escalation_index": 100
         },
         {
             "date": "2026-04-06",
-            "volume": 166,
-            "avg_sentiment": -0.58,
-            "fear_count": 72,
+            "volume": 231,
+            "avg_sentiment": -0.45,
+            "fear_count": 80,
             "escalation_index": 100
         },
         {
             "date": "2026-04-07",
-            "volume": 202,
-            "avg_sentiment": -0.44,
-            "fear_count": 62,
+            "volume": 171,
+            "avg_sentiment": -0.41,
+            "fear_count": 92,
             "escalation_index": 100
         },
         {
             "date": "2026-04-08",
-            "volume": 198,
-            "avg_sentiment": -0.41,
-            "fear_count": 64,
+            "volume": 202,
+            "avg_sentiment": -0.31,
+            "fear_count": 94,
             "escalation_index": 100
         },
         {
             "date": "2026-04-09",
-            "volume": 180,
-            "avg_sentiment": -0.36,
-            "fear_count": 65,
+            "volume": 205,
+            "avg_sentiment": -0.56,
+            "fear_count": 98,
             "escalation_index": 100
         },
         {
             "date": "2026-04-10",
-            "volume": 170,
-            "avg_sentiment": -0.56,
-            "fear_count": 89,
+            "volume": 169,
+            "avg_sentiment": -0.4,
+            "fear_count": 61,
             "escalation_index": 100
         },
         {
             "date": "2026-04-11",
-            "volume": 150,
-            "avg_sentiment": -0.46,
-            "fear_count": 96,
+            "volume": 204,
+            "avg_sentiment": -0.35,
+            "fear_count": 90,
             "escalation_index": 100
         },
         {
             "date": "2026-04-12",
-            "volume": 156,
-            "avg_sentiment": -0.47,
-            "fear_count": 63,
+            "volume": 242,
+            "avg_sentiment": -0.57,
+            "fear_count": 57,
             "escalation_index": 100
         },
         {
             "date": "2026-04-13",
-            "volume": 161,
-            "avg_sentiment": -0.53,
-            "fear_count": 78,
+            "volume": 235,
+            "avg_sentiment": -0.31,
+            "fear_count": 64,
             "escalation_index": 100
         },
         {
             "date": "2026-04-14",
-            "volume": 239,
-            "avg_sentiment": -0.31,
-            "fear_count": 99,
+            "volume": 169,
+            "avg_sentiment": -0.47,
+            "fear_count": 61,
             "escalation_index": 100
         },
         {
             "date": "2026-04-15",
-            "volume": 222,
-            "avg_sentiment": -0.36,
-            "fear_count": 53,
+            "volume": 166,
+            "avg_sentiment": -0.49,
+            "fear_count": 99,
             "escalation_index": 100
         },
         {
             "date": "2026-04-16",
-            "volume": 64,
-            "avg_sentiment": -0.07,
-            "fear_count": 13,
-            "escalation_index": 61.3
+            "volume": 57,
+            "avg_sentiment": -0.0,
+            "fear_count": 8,
+            "escalation_index": 44.6
         },
         {
             "date": "2026-04-17",
-            "volume": 57,
-            "avg_sentiment": -0.08,
-            "fear_count": 16,
-            "escalation_index": 64.6
+            "volume": 44,
+            "avg_sentiment": -0.15,
+            "fear_count": 12,
+            "escalation_index": 53.5
         },
         {
             "date": "2026-04-18",
-            "volume": 35,
-            "avg_sentiment": -0.13,
-            "fear_count": 14,
-            "escalation_index": 51.9
+            "volume": 23,
+            "avg_sentiment": -0.08,
+            "fear_count": 15,
+            "escalation_index": 45.4
         },
         {
             "date": "2026-04-19",
-            "volume": 80,
-            "avg_sentiment": -0.15,
-            "fear_count": 18,
-            "escalation_index": 83.6
+            "volume": 25,
+            "avg_sentiment": -0.13,
+            "fear_count": 11,
+            "escalation_index": 41.1
         },
         {
             "date": "2026-04-20",
-            "volume": 47,
-            "avg_sentiment": 0.09,
-            "fear_count": 15,
-            "escalation_index": 49.2
+            "volume": 34,
+            "avg_sentiment": 0.1,
+            "fear_count": 17,
+            "escalation_index": 46.2
         },
         {
             "date": "2026-04-21",
-            "volume": 50,
-            "avg_sentiment": 0.08,
-            "fear_count": 17,
-            "escalation_index": 55.2
+            "volume": 48,
+            "avg_sentiment": -0.13,
+            "fear_count": 15,
+            "escalation_index": 60.4
         },
         {
             "date": "2026-04-22",
-            "volume": 78,
-            "avg_sentiment": -0.03,
-            "fear_count": 8,
-            "escalation_index": 56.3
+            "volume": 45,
+            "avg_sentiment": -0.18,
+            "fear_count": 17,
+            "escalation_index": 65.5
         },
         {
             "date": "2026-04-23",
-            "volume": 74,
-            "avg_sentiment": -0.03,
-            "fear_count": 15,
-            "escalation_index": 68.4
+            "volume": 36,
+            "avg_sentiment": -0.15,
+            "fear_count": 6,
+            "escalation_index": 37.7
         },
         {
             "date": "2026-04-24",
-            "volume": 36,
-            "avg_sentiment": -0.19,
-            "fear_count": 13,
-            "escalation_index": 53.7
+            "volume": 67,
+            "avg_sentiment": -0.17,
+            "fear_count": 12,
+            "escalation_index": 65.9
         },
         {
             "date": "2026-04-25",
-            "volume": 75,
-            "avg_sentiment": -0.16,
-            "fear_count": 20,
-            "escalation_index": 85.6
+            "volume": 44,
+            "avg_sentiment": 0.04,
+            "fear_count": 8,
+            "escalation_index": 35.9
         },
         {
             "date": "2026-04-26",
-            "volume": 52,
-            "avg_sentiment": -0.02,
-            "fear_count": 17,
-            "escalation_index": 61.0
+            "volume": 65,
+            "avg_sentiment": 0.06,
+            "fear_count": 18,
+            "escalation_index": 65.5
         },
         {
             "date": "2026-04-27",
-            "volume": 51,
-            "avg_sentiment": -0.13,
-            "fear_count": 6,
-            "escalation_index": 44.0
+            "volume": 33,
+            "avg_sentiment": 0.02,
+            "fear_count": 19,
+            "escalation_index": 53.3
         },
         {
             "date": "2026-04-28",
-            "volume": 45,
-            "avg_sentiment": -0.06,
-            "fear_count": 7,
-            "escalation_index": 39.5
-        },
-        {
-            "date": "2026-04-29",
-            "volume": 80,
-            "avg_sentiment": 0.01,
-            "fear_count": 14,
-            "escalation_index": 67.7
-        },
-        {
-            "date": "2026-04-30",
             "volume": 22,
             "avg_sentiment": -0.04,
             "fear_count": 11,
-            "escalation_index": 35.2
+            "escalation_index": 35.0
+        },
+        {
+            "date": "2026-04-29",
+            "volume": 30,
+            "avg_sentiment": -0.03,
+            "fear_count": 12,
+            "escalation_index": 40.3
+        },
+        {
+            "date": "2026-04-30",
+            "volume": 57,
+            "avg_sentiment": -0.11,
+            "fear_count": 14,
+            "escalation_index": 61.9
         },
         {
             "date": "2026-05-01",
-            "volume": 67,
-            "avg_sentiment": -0.13,
-            "fear_count": 18,
-            "escalation_index": 76.1
+            "volume": 27,
+            "avg_sentiment": -0.08,
+            "fear_count": 10,
+            "escalation_index": 37.6
         },
         {
             "date": "2026-05-02",
-            "volume": 31,
-            "avg_sentiment": -0.13,
-            "fear_count": 13,
-            "escalation_index": 48.2
+            "volume": 59,
+            "avg_sentiment": -0.2,
+            "fear_count": 17,
+            "escalation_index": 73.3
         },
         {
             "date": "2026-05-03",
-            "volume": 50,
-            "avg_sentiment": -0.16,
-            "fear_count": 14,
-            "escalation_index": 60.8
+            "volume": 20,
+            "avg_sentiment": -0.01,
+            "fear_count": 7,
+            "escalation_index": 24.4
         },
         {
             "date": "2026-05-04",
-            "volume": 47,
-            "avg_sentiment": -0.14,
-            "fear_count": 17,
-            "escalation_index": 64.5
+            "volume": 64,
+            "avg_sentiment": 0.01,
+            "fear_count": 10,
+            "escalation_index": 51.3
         },
         {
             "date": "2026-05-05",
-            "volume": 48,
-            "avg_sentiment": 0.0,
-            "fear_count": 11,
-            "escalation_index": 45.9
+            "volume": 56,
+            "avg_sentiment": -0.12,
+            "fear_count": 18,
+            "escalation_index": 69.8
         },
         {
             "date": "2026-05-06",
-            "volume": 46,
-            "avg_sentiment": 0.04,
-            "fear_count": 5,
-            "escalation_index": 30.9
+            "volume": 27,
+            "avg_sentiment": 0.0,
+            "fear_count": 13,
+            "escalation_index": 39.4
         },
         {
             "date": "2026-05-07",
-            "volume": 51,
-            "avg_sentiment": 0.04,
-            "fear_count": 14,
-            "escalation_index": 51.5
+            "volume": 25,
+            "avg_sentiment": 0.06,
+            "fear_count": 13,
+            "escalation_index": 35.6
         },
         {
             "date": "2026-05-08",
-            "volume": 39,
-            "avg_sentiment": -0.0,
-            "fear_count": 7,
-            "escalation_index": 33.7
+            "volume": 22,
+            "avg_sentiment": -0.11,
+            "fear_count": 8,
+            "escalation_index": 32.4
         },
         {
             "date": "2026-05-09",
-            "volume": 53,
-            "avg_sentiment": -0.01,
-            "fear_count": 12,
-            "escalation_index": 50.8
+            "volume": 31,
+            "avg_sentiment": -0.03,
+            "fear_count": 10,
+            "escalation_index": 36.9
         },
         {
             "date": "2026-05-10",
-            "volume": 30,
-            "avg_sentiment": -0.05,
-            "fear_count": 17,
-            "escalation_index": 51.5
+            "volume": 78,
+            "avg_sentiment": -0.04,
+            "fear_count": 20,
+            "escalation_index": 81.1
         },
         {
             "date": "2026-05-11",
-            "volume": 51,
-            "avg_sentiment": -0.17,
-            "fear_count": 5,
-            "escalation_index": 43.9
+            "volume": 61,
+            "avg_sentiment": 0.07,
+            "fear_count": 12,
+            "escalation_index": 51.1
         }
     ],
     "themes": {
@@ -606,7 +606,7 @@ const HORMUZ_DATA = {
     ],
     "top_persons": [
         {
-            "name": "Joe Biden",
+            "name": "Donald Trump",
             "count": 650
         },
         {
