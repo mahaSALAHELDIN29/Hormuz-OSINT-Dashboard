@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strait of Hormuz - Ultimate Intelligence Hub</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Leaflet for Maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.7/d3.layout.cloud.min.js"></script>
+
+    <style>
+        :root {
+            --bg: #030712; --surface: rgba(17, 24, 39, 0.6); --border: rgba(55, 65, 81, 0.6);
+            --text-main: #f3f4f6; --text-muted: #9ca3af; --accent-cyan: #06b6d4;
+            --accent-red: #ef4444; --accent-gold: #fbbf24; --accent-purple: #8b5cf6;
+            --accent-green: #10b981;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: var(--text-main); overflow-x: hidden; }
+
+        /* Hero */
+        #hero {
+            padding: 80px 20px; text-align: center; border-bottom: 1px solid var(--border);
+            background: radial-gradient(circle at center, #111827, #030712);
+        }
+        .glitch { font-size: 4rem; font-weight: 900; color: #fff; text-shadow: 0 0 20px var(--accent-cyan); text-transform: uppercase; }
+        .subtitle { font-family: 'JetBrains Mono'; color: var(--accent-cyan); margin-top: 10px; font-size: 1.2rem; }
+        .download-btn {
+            display: inline-flex; align-items: center; gap: 10px; margin-top: 30px; padding: 12px 24px;
+            background: rgba(6, 182, 212, 0.2); border: 1px solid var(--accent-cyan); color: var(--accent-cyan);
+            text-decoration: none; border-radius: 8px; font-family: 'JetBrains Mono'; font-weight: bold; cursor: pointer; transition: 0.3s;
+        }
+        .download-btn:hover { background: var(--accent-cyan); color: #000; }
+
+        /* KPI Row */
+        .kpi-row { display: flex; justify-content: center; gap: 20px; margin-top: 40px; flex-wrap: wrap; }
+        .kpi-card { background: var(--surface); border: 1px solid var(--border); padding: 20px 40px; border-radius: 12px; font-family: 'JetBrains Mono'; text-align: center; }
+        .kpi-val { font-size: 2rem; font-weight: bold; color: var(--accent-cyan); margin-top: 10px; }
+
+        /* Dashboard Grid */
+        .container { max-width: 1600px; margin: 0 auto; padding: 40px 20px; }
+        .section-title { font-size: 2rem; color: #fff; border-left: 4px solid var(--accent-red); padding-left: 15px; margin: 60px 0 30px 0; text-transform: uppercase; }
+        
+        .grid-layout { display: grid; grid-template-columns: repeat(12, 1fr); gap: 20px; }
+        .panel { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 20px; display: flex; flex-direction: column; backdrop-filter: blur(10px); }
+        .panel-title { font-family: 'JetBrains Mono'; font-size: 0.9rem; color: var(--accent-cyan); text-transform: uppercase; margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 10px; }
+
+        /* Col Sizes */
+        .col-12 { grid-column: span 12; } .col-8 { grid-column: span 8; }
+        .col-6 { grid-column: span 6; } .col-4 { grid-column: span 4; }
+        .col-3 { grid-column: span 3; }
+
+        .chart-container { width: 100%; min-height: 350px; flex: 1; position: relative; }
+        
+        /* Node Graph */
+        .node { stroke: #fff; stroke-width: 1.5px; }
+        .link { stroke: rgba(255,255,255,0.2); stroke-opacity: 0.6; }
+        .node-text { fill: #fff; font-family: 'JetBrains Mono'; font-size: 10px; pointer-events: none; }
+
+        /* Methodology */
+        .methodology { margin-top: 80px; padding: 40px; background: rgba(0,0,0,0.5); border-top: 1px solid var(--accent-gold); }
+        .methodology h2 { color: var(--accent-gold); font-family: 'JetBrains Mono'; margin-bottom: 20px; }
+        .methodology p, .methodology li { color: var(--text-muted); line-height: 1.8; }
+    </style>
+</head>
+<body>
+
+    <section id="hero">
+        <h1 class="glitch">Strait of Hormuz: Master Intelligence Hub</h1>
+        <div class="subtitle">Complete NLP Content Analysis & OSINT Extraction</div>
+        
+        <div class="kpi-row">
+            <div class="kpi-card">Articles Analyzed<div class="kpi-val" id="kpi-count">--</div></div>
+            <div class="kpi-card">Date Range<div class="kpi-val" id="kpi-date" style="font-size:1.2rem; margin-top:18px;">--</div></div>
+            <div class="kpi-card" style="border-color: var(--accent-red);">Highly Negative<div class="kpi-val" id="kpi-neg" style="color:var(--accent-red);">--</div></div>
+            <div class="kpi-card">Avg Subjectivity<div class="kpi-val" id="kpi-sub" style="color:var(--accent-gold);">--%</div></div>
+        </div>
+
+        <a href="hormuz_articles.csv" download="Strait_Of_Hormuz_Dataset.csv" class="download-btn">
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+            Download Raw Dataset (CSV)
+        </a>
+    </section>
+
+    <div class="container">
+        
+        <h2 class="section-title" style="border-color: var(--accent-cyan);">Part I: Core Narrative Analysis</h2>
+        
+        <div class="grid-layout">
+            <!-- Timeline -->
+            <div class="panel col-8">
+                <div class="panel-title">Article Volume Trajectory</div>
+                <div class="chart-container" id="chart-timeline"></div>
+            </div>
+
+            <!-- Radar -->
+            <div class="panel col-4">
+                <div class="panel-title">Thematic Clustering</div>
+                <div class="chart-container" id="chart-radar"></div>
+            </div>
+
+            <!-- Entities -->
+            <div class="panel col-4">
+                <div class="panel-title" style="color: var(--accent-red);">Top State Actors (GPE)</div>
+                <div class="chart-container" id="chart-gpe" style="min-height: 250px;"></div>
+            </div>
+            <div class="panel col-4">
+                <div class="panel-title" style="color: var(--accent-gold);">Top Organizations</div>
+                <div class="chart-container" id="chart-org" style="min-height: 250px;"></div>
+            </div>
+            <div class="panel col-4">
+                <div class="panel-title">Key Figures</div>
+                <div class="chart-container" id="chart-person" style="min-height: 250px;"></div>
+            </div>
+
+            <!-- WordCloud & Sentiment -->
+            <div class="panel col-8">
+                <div class="panel-title">Semantic Field (Word Cloud)</div>
+                <div class="chart-container" id="wordcloud" style="min-height: 450px;"></div>
+            </div>
+            <div class="panel col-4" style="gap: 20px;">
+                <div style="flex:1;">
+                    <div class="panel-title">Polarity Matrix</div>
+                    <div class="chart-container" id="chart-sentiment" style="min-height: 200px;"></div>
+                </div>
+                <div style="flex:1;">
+                    <div class="panel-title">Narrative Framing</div>
+                    <div class="chart-container" id="chart-framing" style="min-height: 200px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title" style="border-color: var(--accent-purple); margin-top: 100px;">Part II: Deep OSINT Extraction</h2>
+
+        <div class="grid-layout">
+            <!-- Escalation Index -->
+            <div class="panel col-12">
+                <div class="panel-title" style="color: var(--accent-red);">Predictive Escalation Index vs Volume</div>
+                <div class="chart-container" id="chart-escalation"></div>
+            </div>
+
+            <!-- Network & Map -->
+            <div class="panel col-6">
+                <div class="panel-title" style="color: var(--accent-purple);">Entity Network (Co-occurrence)</div>
+                <div class="chart-container" id="d3-network" style="background: rgba(0,0,0,0.3); border-radius: 8px;"></div>
+            </div>
+            <div class="panel col-6">
+                <div class="panel-title" style="color: var(--accent-green);">Geospatial Ripple Effect (GPE Map)</div>
+                <div class="chart-container" id="map" style="border-radius: 8px; z-index: 1;"></div>
+            </div>
+
+            <!-- Topics, Bigrams, Quotes, Bias -->
+            <div class="panel col-4">
+                <div class="panel-title">Latent Topics (K-Means)</div>
+                <div id="topics-list" style="font-family: 'JetBrains Mono'; font-size: 0.85rem; color: var(--text-muted); line-height: 1.8;"></div>
+            </div>
+            <div class="panel col-4">
+                <div class="panel-title">Dominant Narratives (Bigrams)</div>
+                <div id="bigrams-list" style="font-family: 'JetBrains Mono'; font-size: 0.9rem;"></div>
+            </div>
+            <div class="panel col-4">
+                <div class="panel-title">Media Polarization (Fear vs Sentiment)</div>
+                <div class="chart-container" id="chart-bias" style="min-height: 250px;"></div>
+            </div>
+
+            <div class="panel col-12" style="flex-direction: row; align-items: center; justify-content: space-around; padding: 40px;">
+                <div style="text-align:center;">
+                    <h3 style="color:var(--text-muted);">Journalist Context Sentiment</h3>
+                    <div id="sent-journalist" style="font-size: 3.5rem; font-weight:900; color:var(--accent-cyan);">--</div>
+                </div>
+                <div style="text-align:center;">
+                    <h3 style="color:var(--text-muted);">Direct Quotes Sentiment</h3>
+                    <div id="sent-quotes" style="font-size: 3.5rem; font-weight:900; color:var(--accent-gold);">--</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Methodology Footer -->
+    <div class="methodology">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2>Methodology & Data Sources</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+                <div>
+                    <h3 style="color: #fff; margin-bottom: 10px;">Data Collection Architecture</h3>
+                    <p>The dataset driving this dashboard is automatically aggregated using a custom Python backend. The system executes a daily paginated scrape across Google News RSS, ensuring complete historical coverage.</p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li><strong>Source Engine:</strong> Google News Global Feeds (English)</li>
+                        <li><strong>Frequency:</strong> Daily Automated CRON Job via GitHub Actions</li>
+                        <li><strong>Search Query:</strong> <code>"Hormuz"</code></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 style="color: #fff; margin-bottom: 10px;">NLP & Deep Content Analysis</h3>
+                    <p>Advanced Natural Language Processing (NLP) is applied to every collected article:</p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li><strong>Sentiment & Framing:</strong> Powered by <em>TextBlob</em> polarity scoring and custom fear/diplomacy lexicons.</li>
+                        <li><strong>Entity Extraction (NER):</strong> Driven by <em>spaCy</em> (en_core_web_sm) to identify actors (GPE) and organizations (ORG).</li>
+                        <li><strong>Topic Modeling & Network:</strong> Unsupervised K-Means clustering on TF-IDF vectors, and Co-occurrence edge generation for social network graphs.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="hormuz_data.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof HORMUZ_DATA !== 'undefined') {
+                initDashboard(HORMUZ_DATA);
+            }
+        });
+
+        function initDashboard(data) {
+            // KPIs
+            document.getElementById('kpi-count').innerText = data.metadata.total_articles.toLocaleString();
+            document.getElementById('kpi-date').innerText = data.metadata.date_range;
+            document.getElementById('kpi-neg').innerText = data.sentiment_summary.Negative.toLocaleString();
+            document.getElementById('kpi-sub').innerText = data.avg_subjectivity;
+            
+            document.getElementById('sent-journalist').innerText = data.quote_analysis.journalist_sentiment;
+            document.getElementById('sent-quotes').innerText = data.quote_analysis.quote_sentiment;
+
+            const commonOptions = {
+                chart: { foreColor: '#9ca3af', toolbar: { show: false }, background: 'transparent' },
+                theme: { mode: 'dark' }, tooltip: { theme: 'dark' },
+                grid: { borderColor: 'rgba(255,255,255,0.05)' }
+            };
+
+            // Part 1: Core Analysis
+            new ApexCharts(document.querySelector("#chart-timeline"), {
+                ...commonOptions, series: [{ name: 'Articles', data: data.timeline.map(d => d.volume) }],
+                chart: { type: 'area', height: '100%', fontFamily: 'Inter' },
+                colors: ['#06b6d4'], fill: { type: 'gradient', gradient: { opacityFrom: 0.5, opacityTo: 0.1 } },
+                xaxis: { categories: data.timeline.map(d => d.date), labels: { show: false } },
+                stroke: { curve: 'smooth', width: 2 }
+            }).render();
+
+            new ApexCharts(document.querySelector("#chart-radar"), {
+                ...commonOptions, series: [{ name: 'Themes', data: Object.values(data.themes) }],
+                chart: { type: 'radar', height: '100%' }, labels: Object.keys(data.themes),
+                stroke: { colors: ['#8b5cf6'] }, fill: { opacity: 0.2, colors: ['#8b5cf6'] },
+                markers: { size: 4, colors: ['#fff'] }
+            }).render();
+
+            const createBar = (selector, dataArray, color) => {
+                new ApexCharts(document.querySelector(selector), {
+                    ...commonOptions, series: [{ data: dataArray.map(d => d.count) }],
+                    chart: { type: 'bar', height: '100%' }, plotOptions: { bar: { horizontal: true, borderRadius: 2 } },
+                    colors: [color], xaxis: { categories: dataArray.map(d => d.name) }, dataLabels: { enabled: false }
+                }).render();
+            };
+            createBar("#chart-gpe", data.top_locations.slice(0,5), '#ef4444');
+            createBar("#chart-org", data.top_orgs.slice(0,5), '#fbbf24');
+            createBar("#chart-person", data.top_persons.slice(0,5), '#06b6d4');
+
+            new ApexCharts(document.querySelector("#chart-sentiment"), {
+                ...commonOptions, series: [data.sentiment_summary.Positive, data.sentiment_summary.Negative, data.sentiment_summary.Neutral],
+                chart: { type: 'donut', height: '100%' }, labels: ['Positive', 'Negative', 'Neutral'],
+                colors: ['#10b981', '#ef4444', '#6b7280'], stroke: { width: 0 },
+                legend: { position: 'right' }, dataLabels: { enabled: false }
+            }).render();
+
+            new ApexCharts(document.querySelector("#chart-framing"), {
+                ...commonOptions, series: [{ data: [data.framing["Fear & Escalation"], data.framing["Diplomacy & Calm"]] }],
+                chart: { type: 'bar', height: '100%' }, plotOptions: { bar: { horizontal: true, distributed: true } },
+                colors: ['#ef4444', '#10b981'], xaxis: { categories: ['Fear/Escalation', 'Diplomacy/Calm'] },
+                legend: { show: false }
+            }).render();
+
+            renderWordCloud(data.top_words);
+
+            // Part 2: Deep OSINT
+            new ApexCharts(document.querySelector("#chart-escalation"), {
+                ...commonOptions,
+                series: [
+                    { name: 'Escalation Index', type: 'line', data: data.timeline.map(d => d.escalation_index) },
+                    { name: 'News Volume', type: 'area', data: data.timeline.map(d => d.volume) }
+                ],
+                chart: { height: '100%', type: 'line' }, stroke: { width: [3, 0], curve: 'smooth' },
+                colors: ['#ef4444', '#06b6d4'], xaxis: { categories: data.timeline.map(d => d.date), labels: { show: false } },
+                yaxis: [{ title: { text: 'Escalation' } }, { opposite: true, title: { text: 'Volume' } }]
+            }).render();
+
+            new ApexCharts(document.querySelector("#chart-bias"), {
+                ...commonOptions,
+                series: [
+                    { name: 'Avg Fear', data: data.media_bias.map(d => d.avg_fear) },
+                    { name: 'Avg Sentiment', data: data.media_bias.map(d => d.avg_sentiment) }
+                ],
+                chart: { type: 'bar', height: '100%' }, plotOptions: { bar: { horizontal: true } },
+                colors: ['#ef4444', '#8b5cf6'], xaxis: { categories: data.media_bias.map(d => d.source) }
+            }).render();
+
+            // Populate Lists
+            const bgList = document.getElementById('bigrams-list');
+            data.top_bigrams.forEach(b => {
+                bgList.innerHTML += `<div style="display:flex; justify-content:space-between; border-bottom:1px solid rgba(255,255,255,0.05); padding:8px 0;"><span style="color:#fff">${b.phrase.toUpperCase()}</span><span style="color:var(--accent-cyan)">${b.count}</span></div>`;
+            });
+
+            const tpList = document.getElementById('topics-list');
+            data.topics.forEach((t, i) => {
+                tpList.innerHTML += `<div style="margin-bottom:15px;"><strong style="color:var(--accent-cyan)">Cluster ${i+1}:</strong> ${t.keywords.join(', ').toUpperCase()}</div>`;
+            });
+
+            // Map
+            const map = L.map('map').setView([25.0, 45.0], 3);
+            L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png').addTo(map);
+            data.geospatial.forEach(loc => {
+                L.circle([loc.lat, loc.lon], { color: '#ef4444', fillColor: '#ef4444', fillOpacity: 0.5, radius: Math.max(50000, loc.count * 2000) })
+                 .addTo(map).bindPopup(`${loc.name}: ${loc.count}`);
+            });
+
+            // Network
+            renderNetwork(data.network_edges);
+        }
+
+        function renderWordCloud(wordsData) {
+            const el = document.getElementById('wordcloud');
+            const width = el.clientWidth || 800; const height = el.clientHeight || 450;
+            const maxVal = Math.max(...wordsData.map(d => d.value));
+            const words = wordsData.map(d => ({ text: d.text, size: 10 + (d.value / maxVal) * 60 }));
+
+            const layout = d3.layout.cloud().size([width, height]).words(words).padding(5)
+                .rotate(() => 0).font("JetBrains Mono").fontSize(d => d.size).on("end", draw);
+            layout.start();
+
+            function draw(words) {
+                d3.select("#wordcloud").append("svg").attr("width", layout.size()[0]).attr("height", layout.size()[1])
+                  .append("g").attr("transform", `translate(${layout.size()[0]/2},${layout.size()[1]/2})`)
+                  .selectAll("text").data(words).enter().append("text")
+                  .style("font-size", d => d.size + "px").style("font-family", "JetBrains Mono")
+                  .style("fill", () => ['#06b6d4', '#f3f4f6', '#9ca3af', '#3b82f6'][Math.floor(Math.random()*4)])
+                  .attr("text-anchor", "middle").attr("transform", d => `translate(${[d.x, d.y]})`).text(d => d.text);
+            }
+        }
+
+        function renderNetwork(edgesData) {
+            const el = document.getElementById('d3-network');
+            const width = el.clientWidth || 600; const height = el.clientHeight || 400;
+            const svg = d3.select("#d3-network").append("svg").attr("width", width).attr("height", height);
+
+            let nodesObj = {};
+            edgesData.forEach(l => { nodesObj[l.source] = {id: l.source}; nodesObj[l.target] = {id: l.target}; });
+            const nodes = Object.values(nodesObj); const links = edgesData.map(d => Object.create(d));
+
+            const simulation = d3.forceSimulation(nodes)
+                .force("link", d3.forceLink(links).id(d => d.id).distance(80))
+                .force("charge", d3.forceManyBody().strength(-200))
+                .force("center", d3.forceCenter(width / 2, height / 2));
+
+            const link = svg.append("g").selectAll("line").data(links).enter().append("line")
+                .attr("class", "link").attr("stroke-width", d => Math.sqrt(d.weight)/5);
+            const node = svg.append("g").selectAll("circle").data(nodes).enter().append("circle")
+                .attr("class", "node").attr("r", 6).attr("fill", "#8b5cf6")
+                .call(d3.drag().on("start", dragstarted).on("drag", dragged).on("end", dragended));
+            const text = svg.append("g").selectAll("text").data(nodes).enter().append("text")
+                .attr("class", "node-text").attr("dx", 10).attr("dy", ".35em").text(d => d.id);
+
+            simulation.on("tick", () => {
+                link.attr("x1", d => d.source.x).attr("y1", d => d.source.y).attr("x2", d => d.target.x).attr("y2", d => d.target.y);
+                node.attr("cx", d => d.x).attr("cy", d => d.y);
+                text.attr("x", d => d.x).attr("y", d => d.y);
+            });
+
+            function dragstarted(event, d) { if (!event.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; }
+            function dragged(event, d) { d.fx = event.x; d.fy = event.y; }
+            function dragended(event, d) { if (!event.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; }
+        }
+    </script>
+</body>
+</html>
