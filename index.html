@@ -57,6 +57,27 @@
         .col-6 { grid-column: span 6; } .col-4 { grid-column: span 4; }
         .col-3 { grid-column: span 3; }
 
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .col-8 { grid-column: span 12; }
+            .col-4 { grid-column: span 6; }
+        }
+        @media (max-width: 992px) {
+            .col-6, .col-4, .col-3 { grid-column: span 12; }
+            .kpi-card { width: 100%; }
+            .methodology-grid { grid-template-columns: 1fr !important; }
+            .quote-panel { flex-direction: column !important; }
+        }
+        @media (max-width: 768px) {
+            .glitch { font-size: 2.5rem; }
+            .subtitle { font-size: 0.9rem; }
+            #hero { padding: 40px 10px; }
+            .container { padding: 20px 10px; }
+            .panel { padding: 15px; }
+            #sent-journalist, #sent-quotes { font-size: 2.5rem !important; }
+            .section-title { font-size: 1.5rem; margin: 40px 0 20px 0; }
+        }
+
         .chart-desc { font-size: 0.8rem; color: var(--text-muted); margin-top: -10px; margin-bottom: 15px; line-height: 1.4; font-family: 'Inter', sans-serif; }
         .chart-container { width: 100%; min-height: 350px; flex: 1; position: relative; }
         
@@ -132,13 +153,13 @@
                 <p class="chart-desc">Visualizes the most frequently occurring vocabulary across all articles, filtering out common noise.</p>
                 <div class="chart-container" id="wordcloud" style="min-height: 450px;"></div>
             </div>
-            <div class="panel col-4" style="gap: 20px;">
+            <div class="panel col-4">
                 <div style="flex:1;">
                     <div class="panel-title">Polarity Matrix</div>
                     <p class="chart-desc">Measures whether the overall tone of the coverage leans towards positive, negative, or neutral.</p>
                     <div class="chart-container" id="chart-sentiment" style="min-height: 200px;"></div>
                 </div>
-                <div style="flex:1;">
+                <div style="flex:1; margin-top: 20px;">
                     <div class="panel-title">Narrative Framing</div>
                     <p class="chart-desc">Analyzes lexical framing to see if the media uses fear-mongering or diplomatic/calming language.</p>
                     <div class="chart-container" id="chart-framing" style="min-height: 200px;"></div>
@@ -185,7 +206,7 @@
                 <div class="chart-container" id="chart-bias" style="min-height: 250px;"></div>
             </div>
 
-            <div class="panel col-12" style="flex-direction: row; align-items: center; justify-content: space-around; padding: 40px;">
+            <div class="panel col-12 quote-panel" style="flex-direction: row; align-items: center; justify-content: space-around; padding: 40px; gap: 30px;">
                 <div style="text-align:center;">
                     <h3 style="color:var(--text-muted); margin-bottom: 5px;">Journalist Context Sentiment</h3>
                     <p class="chart-desc">The average sentiment of the text written by the reporters.</p>
@@ -204,7 +225,7 @@
     <div class="methodology">
         <div style="max-width: 1200px; margin: 0 auto;">
             <h2>Methodology & Data Sources</h2>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+            <div class="methodology-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
                 <div>
                     <h3 style="color: #fff; margin-bottom: 10px;">Data Collection Architecture</h3>
                     <p>The dataset driving this dashboard is automatically aggregated using a custom Python backend. The system executes a daily paginated scrape across Google News RSS, ensuring complete historical coverage.</p>
