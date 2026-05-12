@@ -166,7 +166,8 @@ while current_date <= end_date:
             
             if any(char.isdigit() for char in clean_text): continue
             
-            if clean_lower in entity_blacklist or any(noise in clean_lower for noise in ["news", "times", "post", "daily", "journal", "telegraph", "bloomberg"]): continue
+            news_noise_roots = ["news", "times", "post", "daily", "journal", "telegraph", "bloomberg", "guardian", "reuters", "cnn", "jazeera", "bbc", "cnbc", "fox", "cbs", "nbc", "ap", "media", "press"]
+            if clean_lower in entity_blacklist or any(noise in clean_lower for noise in news_noise_roots): continue
             
             valid_ent = False
             
