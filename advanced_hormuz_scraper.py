@@ -157,11 +157,16 @@ while current_date <= end_date:
         
         for ent in doc.ents:
             clean_text = ent.text.strip().title()
-            if len(clean_text) < 3 or clean_text.lower() in stopwords: continue
-            if any(char.isdigit() for char in clean_text): continue
             clean_lower = clean_text.lower()
-            if "strait" in clean_lower or "hormuz" in clean_lower or "iran" == clean_lower: continue
-            if clean_lower in entity_blacklist or any(noise in clean_lower for noise in ["news", "times", "post", "daily", "journal", "telegraph"]): continue
+            if len(clean_text) < 2: continue
+            
+            # Use a separate stopword check for NER so we don't accidentally remove countries like US/Iran
+            ner_noise = {"strait", "hormuz"}
+            if clean_lower in ner_noise: continue
+            
+            if any(char.isdigit() for char in clean_text): continue
+            
+            if clean_lower in entity_blacklist or any(noise in clean_lower for noise in ["news", "times", "post", "daily", "journal", "telegraph", "bloomberg"]): continue
             
             valid_ent = False
             
@@ -176,12 +181,22 @@ while current_date <= end_date:
                 organizations[clean_text] += 1
                 valid_ent = True
             elif ent.label_ == "GPE":
+                # Normalize US references
+                if clean_lower in ["us", "u.s.", "u.s", "usa", "america", "united states of america"]:
+                    clean_text = "United States"
+                
                 locations[clean_text] += 1
                 valid_ent = True
+                
                 # Geospatial Mapping
+                match_found = False
                 for key in geo_dict.keys():
-                    if key.lower() in clean_lower:
+                    if key.lower() in clean_text.lower():
                         geospatial_hits[key] += 1
+                        match_found = True
+                        break
+                if not match_found and clean_text == "United States":
+                    geospatial_hits["United States"] += 1
             
             if valid_ent: ents_in_article.add(clean_text)
         
