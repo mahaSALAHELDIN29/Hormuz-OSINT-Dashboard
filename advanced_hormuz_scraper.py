@@ -223,6 +223,7 @@ dashboard_data = {
     "top_persons": [{"name": p[0], "count": p[1]} for p in persons.most_common(10)]
 }
 
+output_js_path = 'hormuz_data.js'
 with open(output_js_path, 'w', encoding='utf-8') as f:
     f.write('const HORMUZ_DATA = ')
     json.dump(dashboard_data, f, ensure_ascii=False, indent=4)
@@ -230,6 +231,7 @@ with open(output_js_path, 'w', encoding='utf-8') as f:
 
 print(f"Deep Analysis Complete! Saved to {output_js_path}")
 
+output_csv_path = 'hormuz_articles.csv'
 # Generate CSV
 with open(output_csv_path, 'w', newline='', encoding='utf-8') as f:
     writer = csv.writer(f)
