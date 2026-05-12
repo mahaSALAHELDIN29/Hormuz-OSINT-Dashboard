@@ -17,7 +17,9 @@ from sklearn.cluster import KMeans
 
 print("Loading Advanced NLP Models...")
 nlp = spacy.load("en_core_web_sm")
-stopwords = nlp.Defaults.stop_words.union({"strait", "hormuz", "iran", "us", "u.s.", "said", "says", "new", "news", "will", "year", "one", "also", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"})
+noise_words = {"strait", "hormuz", "iran", "us", "u.s.", "said", "says", "new", "news", "will", "year", "one", "also", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday", "reuters", "cnn", "jazeera", "times", "post", "bbc", "cnbc", "bloomberg", "guardian", "fox", "ap", "press", "daily", "sabah", "hill", "cbs", "nbc", "briefing", "today", "update", "live", "video", "watch"}
+stopwords = nlp.Defaults.stop_words.union(noise_words)
+entity_blacklist = {"reuters", "cnn", "al jazeera", "the new york times", "cbs news", "hill", "cnbc", "bbc", "fox news", "the jerusalem post", "daily sabah", "nbc news", "bloomberg", "the guardian", "associated press", "news", "times", "post", "ap", "al", "jazeera", "washington post", "wall street journal"}
 
 # Narrative framing lexicons
 fear_keywords = {"fear", "panic", "threat", "crisis", "warning", "escalation", "danger", "risk", "conflict", "tension", "attack", "strike", "war"}
@@ -58,6 +60,7 @@ organizations = Counter()
 locations = Counter()
 geospatial_hits = Counter()
 word_counter = Counter()
+bigrams_counter = Counter()
 sentiment_summary = {"Positive": 0, "Negative": 0, "Neutral": 0}
 framing = {"Fear & Escalation": 0, "Diplomacy & Calm": 0}
 
@@ -81,7 +84,7 @@ while current_date <= end_date:
         continue
         
     for entry in feed.entries:
-        title = entry.title
+        title = entry.title.split(" - ")[0] # Strip news agency from title
         source_name = entry.source.title if hasattr(entry, 'source') else "Unknown"
         pub_date_str = entry.published
         
@@ -133,9 +136,13 @@ while current_date <= end_date:
         if theme_scores[dom_theme] > 0:
             themes[dom_theme] += 1
         
-        for w in words_list:
-            if w not in stopwords and len(w) > 3:
-                word_counter[w] += 1
+        clean_words = [w for w in words_list if w not in stopwords and len(w) > 3]
+        for w in clean_words:
+            word_counter[w] += 1
+            
+        for i in range(len(clean_words)-1):
+            bg = f"{clean_words[i]} {clean_words[i+1]}"
+            bigrams_counter[bg] += 1
 
         source_stats[source_name]["fear_sum"] += fear_hits
         
@@ -154,12 +161,18 @@ while current_date <= end_date:
             if any(char.isdigit() for char in clean_text): continue
             clean_lower = clean_text.lower()
             if "strait" in clean_lower or "hormuz" in clean_lower or "iran" == clean_lower: continue
+            if clean_lower in entity_blacklist or any(noise in clean_lower for noise in ["news", "times", "post", "daily", "journal", "telegraph"]): continue
             
             valid_ent = False
-            if ent.label_ == "PERSON" and " " in clean_text and not any(w in clean_lower for w in ["admin", "gov", "news"]):
+            
+            # Fix Trump classification
+            if "trump" in clean_lower:
+                persons["Donald Trump"] += 1
+                valid_ent = True
+            elif ent.label_ == "PERSON" and " " in clean_text and not any(w in clean_lower for w in ["admin", "gov", "news"]):
                 persons[clean_text] += 1
                 valid_ent = True
-            elif ent.label_ == "ORG":
+            elif ent.label_ == "ORG" and len(clean_text.split()) < 4:
                 organizations[clean_text] += 1
                 valid_ent = True
             elif ent.label_ == "GPE":
@@ -252,7 +265,7 @@ dashboard_data = {
     "framing": framing,
     "avg_subjectivity": round((avg_subj * 100), 1),
     "top_words": [{"text": w[0], "value": w[1]} for w in word_counter.most_common(20)],
-    "top_bigrams": [{"phrase": "Strait Crisis", "count": 25}], # Simplified bigrams fallback
+    "top_bigrams": [{"phrase": b[0].title(), "count": b[1]} for b in bigrams_counter.most_common(5)],
     "top_orgs": [{"name": o[0], "count": o[1]} for o in organizations.most_common(10)],
     "top_locations": [{"name": l[0], "count": l[1]} for l in locations.most_common(10)],
     "network_edges": network_edges,
