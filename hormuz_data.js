@@ -1,8 +1,8 @@
 const HORMUZ_DATA = {
     "metadata": {
-        "last_updated": "2026-08-26 00:31:35",
-        "total_articles": 7810,
-        "date_range": "Feb 27, 2026 to Aug 26, 2026"
+        "last_updated": "2026-08-27 05:15:27",
+        "total_articles": 7897,
+        "date_range": "Feb 27, 2026 to Aug 27, 2026"
     },
     "timeline": [
         {
@@ -14,45 +14,45 @@ const HORMUZ_DATA = {
         },
         {
             "date": "2026-02-28",
-            "volume": 31,
+            "volume": 33,
             "avg_sentiment": 0.01,
-            "fear_count": 7,
-            "escalation_index": 28.8
+            "fear_count": 8,
+            "escalation_index": 32.1
         },
         {
             "date": "2026-03-01",
-            "volume": 48,
-            "avg_sentiment": 0.0,
+            "volume": 42,
+            "avg_sentiment": 0.02,
             "fear_count": 18,
-            "escalation_index": 59.9
+            "escalation_index": 56.1
         },
         {
             "date": "2026-03-02",
-            "volume": 53,
-            "avg_sentiment": 0.03,
+            "volume": 61,
+            "avg_sentiment": 0.02,
             "fear_count": 13,
-            "escalation_index": 51.1
+            "escalation_index": 55.4
         },
         {
             "date": "2026-03-03",
-            "volume": 42,
+            "volume": 45,
             "avg_sentiment": -0.01,
             "fear_count": 10,
-            "escalation_index": 41.5
+            "escalation_index": 43.0
         },
         {
             "date": "2026-03-04",
-            "volume": 21,
-            "avg_sentiment": 0.06,
-            "fear_count": 6,
-            "escalation_index": 19.6
+            "volume": 22,
+            "avg_sentiment": 0.07,
+            "fear_count": 7,
+            "escalation_index": 21.3
         },
         {
             "date": "2026-03-05",
-            "volume": 24,
-            "avg_sentiment": 0.03,
-            "fear_count": 6,
-            "escalation_index": 22.6
+            "volume": 22,
+            "avg_sentiment": 0.01,
+            "fear_count": 4,
+            "escalation_index": 18.3
         },
         {
             "date": "2026-03-06",
@@ -63,52 +63,52 @@ const HORMUZ_DATA = {
         },
         {
             "date": "2026-03-07",
-            "volume": 10,
+            "volume": 9,
             "avg_sentiment": 0.0,
-            "fear_count": 2,
-            "escalation_index": 9.0
+            "fear_count": 1,
+            "escalation_index": 6.5
         },
         {
             "date": "2026-03-08",
-            "volume": 28,
-            "avg_sentiment": -0.0,
-            "fear_count": 11,
-            "escalation_index": 36.1
+            "volume": 31,
+            "avg_sentiment": -0.01,
+            "fear_count": 13,
+            "escalation_index": 41.9
         },
         {
             "date": "2026-03-09",
-            "volume": 58,
-            "avg_sentiment": 0.0,
-            "fear_count": 7,
-            "escalation_index": 42.8
+            "volume": 59,
+            "avg_sentiment": 0.01,
+            "fear_count": 8,
+            "escalation_index": 45.2
         },
         {
             "date": "2026-03-10",
-            "volume": 49,
+            "volume": 48,
             "avg_sentiment": 0.04,
-            "fear_count": 12,
-            "escalation_index": 46.3
+            "fear_count": 11,
+            "escalation_index": 43.9
         },
         {
             "date": "2026-03-11",
-            "volume": 56,
+            "volume": 54,
             "avg_sentiment": 0.06,
             "fear_count": 17,
-            "escalation_index": 58.8
+            "escalation_index": 58.0
         },
         {
             "date": "2026-03-12",
-            "volume": 46,
-            "avg_sentiment": 0.02,
-            "fear_count": 8,
-            "escalation_index": 37.8
+            "volume": 47,
+            "avg_sentiment": 0.03,
+            "fear_count": 9,
+            "escalation_index": 40.1
         },
         {
             "date": "2026-03-13",
-            "volume": 44,
+            "volume": 43,
             "avg_sentiment": 0.06,
-            "fear_count": 5,
-            "escalation_index": 29.2
+            "fear_count": 4,
+            "escalation_index": 26.3
         },
         {
             "date": "2026-03-14",
@@ -122,7 +122,7 @@ const HORMUZ_DATA = {
             "volume": 68,
             "avg_sentiment": 0.04,
             "fear_count": 6,
-            "escalation_index": 44.0
+            "escalation_index": 43.9
         },
         {
             "date": "2026-03-16",
@@ -136,182 +136,182 @@ const HORMUZ_DATA = {
             "volume": 54,
             "avg_sentiment": 0.07,
             "fear_count": 8,
-            "escalation_index": 39.6
+            "escalation_index": 39.4
         },
         {
             "date": "2026-03-18",
-            "volume": 43,
-            "avg_sentiment": 0.05,
-            "fear_count": 10,
-            "escalation_index": 39.1
+            "volume": 42,
+            "avg_sentiment": 0.06,
+            "fear_count": 9,
+            "escalation_index": 36.2
         },
         {
             "date": "2026-03-19",
             "volume": 53,
             "avg_sentiment": 0.04,
-            "fear_count": 4,
-            "escalation_index": 32.4
+            "fear_count": 5,
+            "escalation_index": 34.6
         },
         {
             "date": "2026-03-20",
-            "volume": 27,
+            "volume": 24,
             "avg_sentiment": 0.03,
-            "fear_count": 4,
-            "escalation_index": 20.2
+            "fear_count": 3,
+            "escalation_index": 16.6
         },
         {
             "date": "2026-03-21",
-            "volume": 41,
-            "avg_sentiment": 0.02,
-            "fear_count": 12,
-            "escalation_index": 43.6
+            "volume": 38,
+            "avg_sentiment": 0.01,
+            "fear_count": 11,
+            "escalation_index": 40.6
         },
         {
             "date": "2026-03-22",
             "volume": 46,
-            "avg_sentiment": 0.01,
+            "avg_sentiment": 0.02,
             "fear_count": 12,
-            "escalation_index": 46.3
+            "escalation_index": 46.2
         },
         {
             "date": "2026-03-23",
-            "volume": 40,
+            "volume": 45,
             "avg_sentiment": 0.0,
-            "fear_count": 5,
-            "escalation_index": 29.8
+            "fear_count": 6,
+            "escalation_index": 34.4
         },
         {
             "date": "2026-03-24",
-            "volume": 35,
-            "avg_sentiment": 0.05,
-            "fear_count": 7,
-            "escalation_index": 28.8
+            "volume": 34,
+            "avg_sentiment": 0.07,
+            "fear_count": 8,
+            "escalation_index": 29.6
         },
         {
             "date": "2026-03-25",
             "volume": 49,
             "avg_sentiment": -0.01,
-            "fear_count": 6,
-            "escalation_index": 36.8
+            "fear_count": 5,
+            "escalation_index": 34.8
         },
         {
             "date": "2026-03-26",
-            "volume": 38,
+            "volume": 37,
             "avg_sentiment": 0.08,
             "fear_count": 6,
-            "escalation_index": 27.2
+            "escalation_index": 26.4
         },
         {
             "date": "2026-03-27",
-            "volume": 10,
-            "avg_sentiment": 0.09,
-            "fear_count": 4,
-            "escalation_index": 8.7
+            "volume": 8,
+            "avg_sentiment": 0.08,
+            "fear_count": 3,
+            "escalation_index": 6.2
         },
         {
             "date": "2026-03-28",
-            "volume": 5,
+            "volume": 4,
             "avg_sentiment": 0.02,
             "fear_count": 0,
-            "escalation_index": 1.5
+            "escalation_index": 0.8
         },
         {
             "date": "2026-03-29",
             "volume": 7,
-            "avg_sentiment": 0.1,
+            "avg_sentiment": 0.12,
             "fear_count": 2,
-            "escalation_index": 2.5
+            "escalation_index": 1.7
         },
         {
             "date": "2026-03-30",
-            "volume": 27,
+            "volume": 31,
             "avg_sentiment": 0.02,
-            "fear_count": 9,
-            "escalation_index": 30.7
+            "fear_count": 10,
+            "escalation_index": 34.4
         },
         {
             "date": "2026-03-31",
-            "volume": 33,
-            "avg_sentiment": 0.02,
+            "volume": 35,
+            "avg_sentiment": 0.03,
             "fear_count": 6,
-            "escalation_index": 27.3
+            "escalation_index": 27.8
         },
         {
             "date": "2026-04-01",
-            "volume": 30,
-            "avg_sentiment": 0.05,
-            "fear_count": 2,
-            "escalation_index": 16.6
+            "volume": 29,
+            "avg_sentiment": 0.1,
+            "fear_count": 3,
+            "escalation_index": 15.5
         },
         {
             "date": "2026-04-02",
-            "volume": 21,
-            "avg_sentiment": 0.02,
-            "fear_count": 4,
-            "escalation_index": 17.4
+            "volume": 18,
+            "avg_sentiment": 0.05,
+            "fear_count": 3,
+            "escalation_index": 12.7
         },
         {
             "date": "2026-04-03",
-            "volume": 12,
-            "avg_sentiment": -0.07,
+            "volume": 14,
+            "avg_sentiment": -0.11,
             "fear_count": 3,
-            "escalation_index": 15.4
+            "escalation_index": 18.3
         },
         {
             "date": "2026-04-04",
-            "volume": 22,
-            "avg_sentiment": 0.0,
+            "volume": 23,
+            "avg_sentiment": 0.01,
             "fear_count": 4,
-            "escalation_index": 18.8
+            "escalation_index": 19.0
         },
         {
             "date": "2026-04-05",
-            "volume": 19,
+            "volume": 18,
             "avg_sentiment": 0.02,
             "fear_count": 2,
-            "escalation_index": 12.5
+            "escalation_index": 11.9
         },
         {
             "date": "2026-04-06",
             "volume": 28,
             "avg_sentiment": -0.02,
             "fear_count": 5,
-            "escalation_index": 25.1
-        },
-        {
-            "date": "2026-04-07",
-            "volume": 65,
-            "avg_sentiment": 0.02,
-            "fear_count": 6,
-            "escalation_index": 43.3
-        },
-        {
-            "date": "2026-04-08",
-            "volume": 46,
-            "avg_sentiment": 0.04,
-            "fear_count": 2,
             "escalation_index": 24.9
         },
         {
-            "date": "2026-04-09",
-            "volume": 46,
+            "date": "2026-04-07",
+            "volume": 70,
             "avg_sentiment": 0.04,
+            "fear_count": 6,
+            "escalation_index": 45.2
+        },
+        {
+            "date": "2026-04-08",
+            "volume": 44,
+            "avg_sentiment": 0.04,
+            "fear_count": 2,
+            "escalation_index": 24.0
+        },
+        {
+            "date": "2026-04-09",
+            "volume": 51,
+            "avg_sentiment": 0.03,
             "fear_count": 4,
-            "escalation_index": 29.1
+            "escalation_index": 32.0
         },
         {
             "date": "2026-04-10",
-            "volume": 30,
+            "volume": 29,
             "avg_sentiment": -0.05,
             "fear_count": 3,
-            "escalation_index": 23.7
+            "escalation_index": 23.2
         },
         {
             "date": "2026-04-11",
             "volume": 45,
-            "avg_sentiment": -0.03,
+            "avg_sentiment": -0.04,
             "fear_count": 3,
-            "escalation_index": 30.1
+            "escalation_index": 30.5
         },
         {
             "date": "2026-04-12",
@@ -322,66 +322,66 @@ const HORMUZ_DATA = {
         },
         {
             "date": "2026-04-13",
-            "volume": 38,
-            "avg_sentiment": -0.03,
+            "volume": 40,
+            "avg_sentiment": -0.02,
             "fear_count": 3,
-            "escalation_index": 26.4
+            "escalation_index": 26.9
         },
         {
             "date": "2026-04-14",
             "volume": 21,
-            "avg_sentiment": 0.09,
+            "avg_sentiment": 0.1,
             "fear_count": 3,
-            "escalation_index": 11.9
+            "escalation_index": 11.7
         },
         {
             "date": "2026-04-15",
-            "volume": 23,
-            "avg_sentiment": 0.04,
-            "fear_count": 3,
-            "escalation_index": 15.3
+            "volume": 5,
+            "avg_sentiment": -0.12,
+            "fear_count": 1,
+            "escalation_index": 10.8
         },
         {
             "date": "2026-04-16",
-            "volume": 78,
+            "volume": 98,
             "avg_sentiment": 0.03,
-            "fear_count": 9,
-            "escalation_index": 55.3
+            "fear_count": 11,
+            "escalation_index": 69.5
         },
         {
             "date": "2026-04-17",
-            "volume": 37,
-            "avg_sentiment": 0.01,
+            "volume": 39,
+            "avg_sentiment": 0.0,
             "fear_count": 4,
-            "escalation_index": 26.2
+            "escalation_index": 27.3
         },
         {
             "date": "2026-04-18",
-            "volume": 63,
+            "volume": 62,
             "avg_sentiment": 0.01,
-            "fear_count": 4,
-            "escalation_index": 39.2
+            "fear_count": 5,
+            "escalation_index": 40.7
         },
         {
             "date": "2026-04-19",
-            "volume": 35,
+            "volume": 34,
             "avg_sentiment": 0.05,
-            "fear_count": 1,
-            "escalation_index": 17.2
+            "fear_count": 2,
+            "escalation_index": 18.6
         },
         {
             "date": "2026-04-20",
-            "volume": 21,
-            "avg_sentiment": 0.04,
-            "fear_count": 4,
-            "escalation_index": 16.5
+            "volume": 20,
+            "avg_sentiment": 0.03,
+            "fear_count": 2,
+            "escalation_index": 12.4
         },
         {
             "date": "2026-04-21",
-            "volume": 41,
-            "avg_sentiment": 0.02,
-            "fear_count": 3,
-            "escalation_index": 25.6
+            "volume": 40,
+            "avg_sentiment": 0.03,
+            "fear_count": 2,
+            "escalation_index": 22.6
         },
         {
             "date": "2026-04-22",
@@ -401,36 +401,36 @@ const HORMUZ_DATA = {
             "date": "2026-04-24",
             "volume": 6,
             "avg_sentiment": -0.16,
-            "fear_count": 1,
-            "escalation_index": 13.0
+            "fear_count": 0,
+            "escalation_index": 11.0
         },
         {
             "date": "2026-04-25",
-            "volume": 5,
+            "volume": 6,
             "avg_sentiment": -0.01,
-            "fear_count": 2,
-            "escalation_index": 7.1
+            "fear_count": 3,
+            "escalation_index": 9.5
         },
         {
             "date": "2026-04-26",
-            "volume": 20,
-            "avg_sentiment": 0.01,
+            "volume": 18,
+            "avg_sentiment": 0.0,
             "fear_count": 5,
-            "escalation_index": 19.4
+            "escalation_index": 18.9
         },
         {
             "date": "2026-04-27",
-            "volume": 16,
+            "volume": 15,
             "avg_sentiment": 0.05,
             "fear_count": 2,
-            "escalation_index": 9.7
+            "escalation_index": 9.1
         },
         {
             "date": "2026-04-28",
-            "volume": 14,
+            "volume": 12,
             "avg_sentiment": 0.06,
             "fear_count": 4,
-            "escalation_index": 12.1
+            "escalation_index": 11.1
         },
         {
             "date": "2026-04-29",
@@ -448,24 +448,24 @@ const HORMUZ_DATA = {
         },
         {
             "date": "2026-05-01",
-            "volume": 8,
+            "volume": 9,
             "avg_sentiment": 0.05,
             "fear_count": 0,
-            "escalation_index": 1.4
+            "escalation_index": 2.0
         },
         {
             "date": "2026-05-02",
-            "volume": 24,
+            "volume": 22,
             "avg_sentiment": 0.07,
             "fear_count": 2,
-            "escalation_index": 12.6
+            "escalation_index": 11.4
         },
         {
             "date": "2026-05-03",
             "volume": 50,
             "avg_sentiment": 0.03,
             "fear_count": 7,
-            "escalation_index": 37.4
+            "escalation_index": 37.3
         },
         {
             "date": "2026-05-04",
@@ -476,17 +476,17 @@ const HORMUZ_DATA = {
         },
         {
             "date": "2026-05-05",
-            "volume": 26,
+            "volume": 28,
             "avg_sentiment": -0.0,
-            "fear_count": 0,
-            "escalation_index": 13.1
+            "fear_count": 1,
+            "escalation_index": 16.2
         },
         {
             "date": "2026-05-06",
-            "volume": 37,
+            "volume": 36,
             "avg_sentiment": -0.0,
             "fear_count": 3,
-            "escalation_index": 24.7
+            "escalation_index": 24.2
         },
         {
             "date": "2026-05-07",
@@ -511,31 +511,31 @@ const HORMUZ_DATA = {
         },
         {
             "date": "2026-05-10",
-            "volume": 9,
-            "avg_sentiment": -0.09,
+            "volume": 10,
+            "avg_sentiment": -0.1,
             "fear_count": 0,
-            "escalation_index": 9.1
+            "escalation_index": 9.9
         },
         {
             "date": "2026-05-11",
-            "volume": 51,
+            "volume": 50,
             "avg_sentiment": 0.03,
-            "fear_count": 4,
-            "escalation_index": 32.1
+            "fear_count": 5,
+            "escalation_index": 33.6
         },
         {
             "date": "2026-05-12",
-            "volume": 17,
+            "volume": 18,
             "avg_sentiment": -0.02,
             "fear_count": 3,
-            "escalation_index": 15.6
+            "escalation_index": 15.9
         },
         {
             "date": "2026-05-13",
-            "volume": 39,
+            "volume": 40,
             "avg_sentiment": -0.01,
             "fear_count": 5,
-            "escalation_index": 29.8
+            "escalation_index": 30.3
         },
         {
             "date": "2026-05-14",
@@ -545,18 +545,25 @@ const HORMUZ_DATA = {
             "escalation_index": 26.0
         },
         {
+            "date": "2026-05-15",
+            "volume": 15,
+            "avg_sentiment": 0.01,
+            "fear_count": 1,
+            "escalation_index": 9.1
+        },
+        {
             "date": "2026-05-16",
-            "volume": 28,
-            "avg_sentiment": 0.03,
-            "fear_count": 4,
-            "escalation_index": 20.6
+            "volume": 15,
+            "avg_sentiment": 0.05,
+            "fear_count": 3,
+            "escalation_index": 10.9
         },
         {
             "date": "2026-05-17",
-            "volume": 33,
-            "avg_sentiment": 0.04,
+            "volume": 31,
+            "avg_sentiment": 0.05,
             "fear_count": 2,
-            "escalation_index": 18.3
+            "escalation_index": 17.2
         },
         {
             "date": "2026-05-18",
@@ -574,73 +581,73 @@ const HORMUZ_DATA = {
         },
         {
             "date": "2026-05-20",
-            "volume": 19,
-            "avg_sentiment": 0.02,
-            "fear_count": 1,
-            "escalation_index": 10.3
+            "volume": 21,
+            "avg_sentiment": 0.03,
+            "fear_count": 3,
+            "escalation_index": 14.9
         },
         {
             "date": "2026-05-21",
-            "volume": 21,
-            "avg_sentiment": -0.0,
+            "volume": 20,
+            "avg_sentiment": -0.01,
             "fear_count": 4,
-            "escalation_index": 18.7
+            "escalation_index": 18.5
         },
         {
             "date": "2026-05-22",
-            "volume": 27,
+            "volume": 26,
             "avg_sentiment": 0.05,
             "fear_count": 5,
-            "escalation_index": 21.1
+            "escalation_index": 20.5
         },
         {
             "date": "2026-05-23",
-            "volume": 22,
-            "avg_sentiment": 0.08,
-            "fear_count": 3,
-            "escalation_index": 13.0
+            "volume": 24,
+            "avg_sentiment": 0.07,
+            "fear_count": 4,
+            "escalation_index": 16.3
         },
         {
             "date": "2026-05-24",
-            "volume": 25,
+            "volume": 26,
             "avg_sentiment": 0.02,
             "fear_count": 2,
-            "escalation_index": 15.3
+            "escalation_index": 15.9
         },
         {
             "date": "2026-05-25",
-            "volume": 26,
-            "avg_sentiment": 0.07,
-            "fear_count": 3,
-            "escalation_index": 15.7
+            "volume": 25,
+            "avg_sentiment": 0.02,
+            "fear_count": 2,
+            "escalation_index": 15.4
         },
         {
             "date": "2026-05-26",
-            "volume": 28,
+            "volume": 30,
             "avg_sentiment": 0.04,
-            "fear_count": 1,
-            "escalation_index": 13.9
+            "fear_count": 2,
+            "escalation_index": 17.1
         },
         {
             "date": "2026-05-27",
-            "volume": 27,
+            "volume": 26,
             "avg_sentiment": 0.02,
-            "fear_count": 7,
-            "escalation_index": 26.6
+            "fear_count": 6,
+            "escalation_index": 24.0
         },
         {
             "date": "2026-05-28",
-            "volume": 21,
-            "avg_sentiment": -0.07,
+            "volume": 20,
+            "avg_sentiment": -0.06,
             "fear_count": 3,
-            "escalation_index": 19.9
+            "escalation_index": 18.9
         },
         {
             "date": "2026-05-29",
-            "volume": 13,
+            "volume": 12,
             "avg_sentiment": 0.09,
             "fear_count": 2,
-            "escalation_index": 6.2
+            "escalation_index": 5.3
         },
         {
             "date": "2026-05-30",
@@ -651,24 +658,24 @@ const HORMUZ_DATA = {
         },
         {
             "date": "2026-05-31",
-            "volume": 19,
+            "volume": 20,
             "avg_sentiment": 0.0,
             "fear_count": 1,
-            "escalation_index": 11.4
+            "escalation_index": 11.9
         },
         {
             "date": "2026-06-01",
-            "volume": 14,
+            "volume": 15,
             "avg_sentiment": 0.03,
             "fear_count": 2,
-            "escalation_index": 9.5
+            "escalation_index": 10.1
         },
         {
             "date": "2026-06-02",
-            "volume": 17,
-            "avg_sentiment": 0.12,
+            "volume": 16,
+            "avg_sentiment": 0.13,
             "fear_count": 2,
-            "escalation_index": 6.4
+            "escalation_index": 5.5
         },
         {
             "date": "2026-06-03",
@@ -686,15 +693,15 @@ const HORMUZ_DATA = {
         },
         {
             "date": "2026-06-05",
-            "volume": 9,
-            "avg_sentiment": -0.0,
+            "volume": 8,
+            "avg_sentiment": -0.04,
             "fear_count": 1,
-            "escalation_index": 6.7
+            "escalation_index": 8.1
         },
         {
             "date": "2026-06-06",
-            "volume": 13,
-            "avg_sentiment": -0.12,
+            "volume": 12,
+            "avg_sentiment": -0.13,
             "fear_count": 4,
             "escalation_index": 20.7
         },
@@ -707,31 +714,31 @@ const HORMUZ_DATA = {
         },
         {
             "date": "2026-06-08",
-            "volume": 29,
+            "volume": 32,
             "avg_sentiment": 0.03,
             "fear_count": 2,
-            "escalation_index": 17.2
+            "escalation_index": 18.6
         },
         {
             "date": "2026-06-09",
-            "volume": 28,
-            "avg_sentiment": 0.07,
+            "volume": 29,
+            "avg_sentiment": 0.06,
             "fear_count": 2,
-            "escalation_index": 14.3
+            "escalation_index": 15.4
         },
         {
             "date": "2026-06-10",
-            "volume": 32,
-            "avg_sentiment": 0.02,
-            "fear_count": 1,
-            "escalation_index": 17.0
+            "volume": 4,
+            "avg_sentiment": -0.03,
+            "fear_count": 0,
+            "escalation_index": 3.2
         },
         {
             "date": "2026-06-11",
-            "volume": 21,
-            "avg_sentiment": 0.05,
-            "fear_count": 7,
-            "escalation_index": 22.2
+            "volume": 47,
+            "avg_sentiment": 0.04,
+            "fear_count": 8,
+            "escalation_index": 37.6
         },
         {
             "date": "2026-06-12",
@@ -742,31 +749,31 @@ const HORMUZ_DATA = {
         },
         {
             "date": "2026-06-13",
-            "volume": 29,
+            "volume": 28,
             "avg_sentiment": 0.08,
             "fear_count": 5,
-            "escalation_index": 20.6
+            "escalation_index": 20.0
         },
         {
             "date": "2026-06-14",
-            "volume": 72,
+            "volume": 74,
             "avg_sentiment": 0.05,
-            "fear_count": 11,
-            "escalation_index": 55.6
+            "fear_count": 10,
+            "escalation_index": 54.4
         },
         {
             "date": "2026-06-15",
             "volume": 38,
             "avg_sentiment": 0.1,
             "fear_count": 4,
-            "escalation_index": 22.2
+            "escalation_index": 22.0
         },
         {
             "date": "2026-06-16",
-            "volume": 56,
-            "avg_sentiment": -0.02,
+            "volume": 57,
+            "avg_sentiment": -0.0,
             "fear_count": 6,
-            "escalation_index": 41.0
+            "escalation_index": 40.6
         },
         {
             "date": "2026-06-17",
@@ -777,136 +784,136 @@ const HORMUZ_DATA = {
         },
         {
             "date": "2026-06-18",
-            "volume": 42,
+            "volume": 44,
             "avg_sentiment": -0.01,
-            "fear_count": 3,
-            "escalation_index": 27.5
+            "fear_count": 4,
+            "escalation_index": 30.7
         },
         {
             "date": "2026-06-19",
-            "volume": 63,
+            "volume": 62,
             "avg_sentiment": -0.01,
             "fear_count": 1,
-            "escalation_index": 33.8
+            "escalation_index": 33.5
         },
         {
             "date": "2026-06-20",
-            "volume": 39,
-            "avg_sentiment": -0.0,
-            "fear_count": 5,
-            "escalation_index": 29.6
+            "volume": 30,
+            "avg_sentiment": 0.01,
+            "fear_count": 4,
+            "escalation_index": 22.4
         },
         {
             "date": "2026-06-21",
             "volume": 46,
-            "avg_sentiment": 0.0,
+            "avg_sentiment": -0.01,
             "fear_count": 5,
-            "escalation_index": 32.9
+            "escalation_index": 33.6
         },
         {
             "date": "2026-06-22",
-            "volume": 46,
-            "avg_sentiment": 0.02,
+            "volume": 43,
+            "avg_sentiment": 0.04,
             "fear_count": 4,
-            "escalation_index": 29.8
+            "escalation_index": 27.4
         },
         {
             "date": "2026-06-23",
-            "volume": 31,
-            "avg_sentiment": -0.03,
+            "volume": 33,
+            "avg_sentiment": -0.02,
             "fear_count": 3,
-            "escalation_index": 23.0
+            "escalation_index": 23.3
         },
         {
             "date": "2026-06-24",
-            "volume": 64,
-            "avg_sentiment": 0.03,
+            "volume": 67,
+            "avg_sentiment": 0.02,
             "fear_count": 24,
-            "escalation_index": 78.6
+            "escalation_index": 80.5
         },
         {
             "date": "2026-06-25",
-            "volume": 66,
-            "avg_sentiment": 0.05,
-            "fear_count": 22,
-            "escalation_index": 74.7
+            "volume": 37,
+            "avg_sentiment": 0.03,
+            "fear_count": 15,
+            "escalation_index": 46.8
         },
         {
             "date": "2026-06-26",
-            "volume": 40,
-            "avg_sentiment": 0.02,
-            "fear_count": 9,
-            "escalation_index": 37.1
+            "volume": 72,
+            "avg_sentiment": 0.03,
+            "fear_count": 26,
+            "escalation_index": 86.3
         },
         {
             "date": "2026-06-27",
-            "volume": 71,
+            "volume": 74,
             "avg_sentiment": 0.01,
-            "fear_count": 20,
-            "escalation_index": 75.1
+            "fear_count": 25,
+            "escalation_index": 86.6
         },
         {
             "date": "2026-06-28",
-            "volume": 67,
-            "avg_sentiment": 0.04,
-            "fear_count": 7,
-            "escalation_index": 45.7
+            "volume": 64,
+            "avg_sentiment": 0.01,
+            "fear_count": 8,
+            "escalation_index": 47.5
         },
         {
             "date": "2026-06-29",
-            "volume": 51,
-            "avg_sentiment": 0.01,
+            "volume": 52,
+            "avg_sentiment": 0.03,
             "fear_count": 7,
-            "escalation_index": 38.9
+            "escalation_index": 38.3
         },
         {
             "date": "2026-06-30",
-            "volume": 69,
+            "volume": 67,
             "avg_sentiment": -0.02,
             "fear_count": 8,
-            "escalation_index": 51.3
+            "escalation_index": 50.6
         },
         {
             "date": "2026-07-01",
-            "volume": 80,
+            "volume": 78,
             "avg_sentiment": -0.01,
             "fear_count": 16,
-            "escalation_index": 72.3
+            "escalation_index": 71.7
         },
         {
             "date": "2026-07-02",
-            "volume": 40,
-            "avg_sentiment": -0.05,
-            "fear_count": 2,
-            "escalation_index": 26.3
+            "volume": 39,
+            "avg_sentiment": -0.01,
+            "fear_count": 1,
+            "escalation_index": 22.2
         },
         {
             "date": "2026-07-03",
             "volume": 58,
-            "avg_sentiment": 0.06,
+            "avg_sentiment": 0.05,
             "fear_count": 5,
-            "escalation_index": 36.1
+            "escalation_index": 36.7
         },
         {
             "date": "2026-07-04",
-            "volume": 58,
+            "volume": 60,
             "avg_sentiment": 0.06,
             "fear_count": 6,
-            "escalation_index": 37.9
+            "escalation_index": 38.8
         },
         {
             "date": "2026-07-05",
-            "volume": 62,
-            "avg_sentiment": 0.01,
+            "volume": 60,
+            "avg_sentiment": 0.0,
             "fear_count": 9,
-            "escalation_index": 48.4
+            "escalation_index": 47.8
         },
         {
             "date": "2026-07-06",
-            "volume": 90,
-            "avg_sentiment": 0.06,
+            "volume": 92,
+            "avg_sentiment": 0.08,
             "fear_count": 12,
-            "escalation_index": 65.9
+            "escalation_index": 66.2
         },
         {
             "date": "2026-07-07",
@@ -917,526 +924,533 @@ const HORMUZ_DATA = {
         },
         {
             "date": "2026-07-08",
-            "volume": 66,
-            "avg_sentiment": 0.0,
+            "volume": 64,
+            "avg_sentiment": 0.02,
             "fear_count": 16,
-            "escalation_index": 64.8
+            "escalation_index": 63.0
         },
         {
             "date": "2026-07-09",
-            "volume": 52,
-            "avg_sentiment": 0.06,
+            "volume": 51,
+            "avg_sentiment": 0.04,
             "fear_count": 8,
-            "escalation_index": 38.9
+            "escalation_index": 39.6
         },
         {
             "date": "2026-07-10",
-            "volume": 54,
-            "avg_sentiment": 0.06,
-            "fear_count": 10,
-            "escalation_index": 43.9
+            "volume": 57,
+            "avg_sentiment": 0.05,
+            "fear_count": 11,
+            "escalation_index": 48.0
         },
         {
             "date": "2026-07-11",
             "volume": 70,
             "avg_sentiment": 0.03,
             "fear_count": 11,
-            "escalation_index": 55.6
+            "escalation_index": 55.3
         },
         {
             "date": "2026-07-12",
-            "volume": 87,
-            "avg_sentiment": 0.03,
+            "volume": 85,
+            "avg_sentiment": 0.02,
             "fear_count": 12,
-            "escalation_index": 65.8
+            "escalation_index": 65.3
         },
         {
             "date": "2026-07-13",
             "volume": 57,
             "avg_sentiment": -0.01,
             "fear_count": 7,
-            "escalation_index": 43.1
+            "escalation_index": 43.0
         },
         {
             "date": "2026-07-14",
-            "volume": 48,
+            "volume": 49,
             "avg_sentiment": -0.01,
             "fear_count": 13,
-            "escalation_index": 50.5
+            "escalation_index": 51.0
         },
         {
             "date": "2026-07-15",
-            "volume": 72,
+            "volume": 71,
             "avg_sentiment": -0.02,
-            "fear_count": 15,
-            "escalation_index": 67.0
+            "fear_count": 14,
+            "escalation_index": 64.5
         },
         {
             "date": "2026-07-16",
-            "volume": 65,
+            "volume": 67,
             "avg_sentiment": 0.02,
-            "fear_count": 18,
-            "escalation_index": 67.3
+            "fear_count": 19,
+            "escalation_index": 70.5
         },
         {
             "date": "2026-07-17",
-            "volume": 52,
-            "avg_sentiment": 0.03,
-            "fear_count": 9,
-            "escalation_index": 42.3
+            "volume": 50,
+            "avg_sentiment": 0.02,
+            "fear_count": 10,
+            "escalation_index": 44.0
         },
         {
             "date": "2026-07-18",
             "volume": 62,
             "avg_sentiment": 0.02,
-            "fear_count": 13,
-            "escalation_index": 55.8
+            "fear_count": 14,
+            "escalation_index": 58.0
         },
         {
             "date": "2026-07-19",
-            "volume": 64,
+            "volume": 65,
             "avg_sentiment": 0.02,
-            "fear_count": 17,
-            "escalation_index": 65.0
+            "fear_count": 16,
+            "escalation_index": 63.4
         },
         {
             "date": "2026-07-20",
             "volume": 45,
             "avg_sentiment": 0.06,
             "fear_count": 11,
-            "escalation_index": 41.4
+            "escalation_index": 41.7
         },
         {
             "date": "2026-07-21",
-            "volume": 65,
+            "volume": 64,
             "avg_sentiment": -0.04,
             "fear_count": 13,
-            "escalation_index": 60.7
+            "escalation_index": 60.2
         },
         {
             "date": "2026-07-22",
-            "volume": 40,
-            "avg_sentiment": -0.04,
-            "fear_count": 4,
-            "escalation_index": 29.8
+            "volume": 46,
+            "avg_sentiment": -0.05,
+            "fear_count": 8,
+            "escalation_index": 41.7
         },
         {
             "date": "2026-07-23",
-            "volume": 58,
-            "avg_sentiment": 0.01,
+            "volume": 63,
+            "avg_sentiment": -0.01,
             "fear_count": 15,
-            "escalation_index": 58.6
+            "escalation_index": 61.9
         },
         {
             "date": "2026-07-24",
-            "volume": 46,
+            "volume": 44,
             "avg_sentiment": 0.02,
             "fear_count": 8,
-            "escalation_index": 38.2
+            "escalation_index": 37.1
         },
         {
             "date": "2026-07-25",
-            "volume": 72,
-            "avg_sentiment": 0.02,
-            "fear_count": 23,
-            "escalation_index": 80.8
+            "volume": 69,
+            "avg_sentiment": 0.03,
+            "fear_count": 21,
+            "escalation_index": 75.2
         },
         {
             "date": "2026-07-26",
-            "volume": 63,
-            "avg_sentiment": 0.03,
+            "volume": 65,
+            "avg_sentiment": 0.0,
+            "fear_count": 8,
+            "escalation_index": 48.4
+        },
+        {
+            "date": "2026-07-27",
+            "volume": 52,
+            "avg_sentiment": 0.06,
+            "fear_count": 9,
+            "escalation_index": 40.8
+        },
+        {
+            "date": "2026-07-28",
+            "volume": 58,
+            "avg_sentiment": -0.02,
             "fear_count": 11,
             "escalation_index": 52.2
         },
         {
-            "date": "2026-07-27",
-            "volume": 55,
-            "avg_sentiment": 0.08,
-            "fear_count": 10,
-            "escalation_index": 43.3
-        },
-        {
-            "date": "2026-07-28",
-            "volume": 59,
-            "avg_sentiment": 0.01,
-            "fear_count": 11,
-            "escalation_index": 50.9
-        },
-        {
             "date": "2026-07-29",
-            "volume": 54,
+            "volume": 52,
             "avg_sentiment": 0.01,
-            "fear_count": 8,
-            "escalation_index": 42.3
+            "fear_count": 9,
+            "escalation_index": 43.7
         },
         {
             "date": "2026-07-30",
-            "volume": 59,
-            "avg_sentiment": -0.01,
-            "fear_count": 11,
-            "escalation_index": 51.9
+            "volume": 56,
+            "avg_sentiment": -0.0,
+            "fear_count": 10,
+            "escalation_index": 48.1
         },
         {
             "date": "2026-07-31",
-            "volume": 43,
-            "avg_sentiment": 0.09,
-            "fear_count": 14,
-            "escalation_index": 45.0
+            "volume": 46,
+            "avg_sentiment": 0.07,
+            "fear_count": 16,
+            "escalation_index": 51.3
         },
         {
             "date": "2026-08-01",
-            "volume": 67,
-            "avg_sentiment": 0.05,
-            "fear_count": 17,
-            "escalation_index": 64.9
+            "volume": 66,
+            "avg_sentiment": 0.04,
+            "fear_count": 15,
+            "escalation_index": 61.1
         },
         {
             "date": "2026-08-02",
-            "volume": 69,
-            "avg_sentiment": 0.02,
-            "fear_count": 6,
-            "escalation_index": 45.6
+            "volume": 68,
+            "avg_sentiment": 0.03,
+            "fear_count": 7,
+            "escalation_index": 46.7
         },
         {
             "date": "2026-08-03",
-            "volume": 76,
-            "avg_sentiment": 0.03,
-            "fear_count": 5,
-            "escalation_index": 46.7
+            "volume": 78,
+            "avg_sentiment": 0.01,
+            "fear_count": 4,
+            "escalation_index": 46.6
         },
         {
             "date": "2026-08-04",
             "volume": 67,
-            "avg_sentiment": 0.02,
+            "avg_sentiment": 0.04,
             "fear_count": 1,
-            "escalation_index": 34.6
+            "escalation_index": 33.6
         },
         {
             "date": "2026-08-05",
-            "volume": 67,
-            "avg_sentiment": -0.0,
+            "volume": 71,
+            "avg_sentiment": -0.01,
             "fear_count": 3,
-            "escalation_index": 39.7
+            "escalation_index": 41.8
         },
         {
             "date": "2026-08-06",
-            "volume": 67,
+            "volume": 66,
             "avg_sentiment": 0.0,
             "fear_count": 2,
-            "escalation_index": 37.4
+            "escalation_index": 37.0
         },
         {
             "date": "2026-08-07",
-            "volume": 76,
+            "volume": 79,
             "avg_sentiment": 0.06,
             "fear_count": 4,
-            "escalation_index": 42.8
+            "escalation_index": 44.6
         },
         {
             "date": "2026-08-08",
-            "volume": 70,
+            "volume": 74,
             "avg_sentiment": 0.04,
             "fear_count": 5,
-            "escalation_index": 42.8
+            "escalation_index": 45.1
         },
         {
             "date": "2026-08-09",
             "volume": 77,
-            "avg_sentiment": 0.02,
-            "fear_count": 5,
-            "escalation_index": 47.6
+            "avg_sentiment": 0.01,
+            "fear_count": 6,
+            "escalation_index": 50.0
         },
         {
             "date": "2026-08-10",
-            "volume": 72,
+            "volume": 71,
             "avg_sentiment": -0.01,
-            "fear_count": 7,
-            "escalation_index": 50.3
+            "fear_count": 5,
+            "escalation_index": 46.1
         },
         {
             "date": "2026-08-11",
-            "volume": 77,
+            "volume": 79,
             "avg_sentiment": 0.05,
             "fear_count": 7,
-            "escalation_index": 50.2
+            "escalation_index": 51.1
         },
         {
             "date": "2026-08-12",
-            "volume": 67,
-            "avg_sentiment": 0.01,
+            "volume": 68,
+            "avg_sentiment": 0.02,
             "fear_count": 6,
             "escalation_index": 44.8
         },
         {
             "date": "2026-08-13",
-            "volume": 73,
-            "avg_sentiment": 0.0,
-            "fear_count": 8,
-            "escalation_index": 52.4
+            "volume": 70,
+            "avg_sentiment": 0.01,
+            "fear_count": 9,
+            "escalation_index": 52.5
         },
         {
             "date": "2026-08-14",
-            "volume": 62,
-            "avg_sentiment": 0.02,
-            "fear_count": 7,
-            "escalation_index": 44.1
+            "volume": 63,
+            "avg_sentiment": -0.0,
+            "fear_count": 8,
+            "escalation_index": 47.7
         },
         {
             "date": "2026-08-15",
-            "volume": 58,
-            "avg_sentiment": 0.03,
+            "volume": 57,
+            "avg_sentiment": 0.05,
             "fear_count": 12,
-            "escalation_index": 51.6
+            "escalation_index": 50.2
         },
         {
             "date": "2026-08-16",
             "volume": 82,
-            "avg_sentiment": -0.01,
-            "fear_count": 9,
-            "escalation_index": 59.7
+            "avg_sentiment": -0.0,
+            "fear_count": 7,
+            "escalation_index": 55.2
         },
         {
             "date": "2026-08-17",
-            "volume": 46,
-            "avg_sentiment": 0.04,
-            "fear_count": 11,
-            "escalation_index": 43.2
+            "volume": 67,
+            "avg_sentiment": -0.04,
+            "fear_count": 8,
+            "escalation_index": 51.4
         },
         {
             "date": "2026-08-18",
-            "volume": 90,
-            "avg_sentiment": -0.02,
-            "fear_count": 11,
-            "escalation_index": 67.8
+            "volume": 47,
+            "avg_sentiment": 0.03,
+            "fear_count": 10,
+            "escalation_index": 42.0
         },
         {
             "date": "2026-08-19",
-            "volume": 89,
-            "avg_sentiment": 0.03,
-            "fear_count": 10,
-            "escalation_index": 63.1
+            "volume": 91,
+            "avg_sentiment": 0.02,
+            "fear_count": 13,
+            "escalation_index": 70.7
         },
         {
             "date": "2026-08-20",
-            "volume": 89,
-            "avg_sentiment": 0.02,
-            "fear_count": 11,
-            "escalation_index": 65.3
+            "volume": 92,
+            "avg_sentiment": 0.03,
+            "fear_count": 10,
+            "escalation_index": 64.5
         },
         {
             "date": "2026-08-21",
-            "volume": 92,
-            "avg_sentiment": 0.0,
+            "volume": 93,
+            "avg_sentiment": 0.01,
             "fear_count": 11,
-            "escalation_index": 68.0
+            "escalation_index": 68.1
         },
         {
             "date": "2026-08-22",
-            "volume": 94,
-            "avg_sentiment": 0.05,
+            "volume": 88,
+            "avg_sentiment": 0.04,
             "fear_count": 2,
-            "escalation_index": 48.7
+            "escalation_index": 46.2
         },
         {
             "date": "2026-08-23",
-            "volume": 95,
+            "volume": 94,
             "avg_sentiment": 0.03,
-            "fear_count": 17,
-            "escalation_index": 80.0
+            "fear_count": 20,
+            "escalation_index": 85.5
         },
         {
             "date": "2026-08-24",
-            "volume": 93,
+            "volume": 92,
             "avg_sentiment": 0.01,
-            "fear_count": 26,
-            "escalation_index": 97.8
+            "fear_count": 21,
+            "escalation_index": 87.6
         },
         {
             "date": "2026-08-25",
+            "volume": 93,
+            "avg_sentiment": 0.0,
+            "fear_count": 12,
+            "escalation_index": 70.5
+        },
+        {
+            "date": "2026-08-26",
             "volume": 90,
-            "avg_sentiment": 0.02,
-            "fear_count": 8,
-            "escalation_index": 59.9
+            "avg_sentiment": -0.0,
+            "fear_count": 10,
+            "escalation_index": 65.2
         }
     ],
     "themes": {
-        "Military": 1156,
-        "Economic": 1272,
-        "Diplomatic": 487,
-        "Maritime": 3375
+        "Military": 1184,
+        "Economic": 1276,
+        "Diplomatic": 499,
+        "Maritime": 3423
     },
     "sentiment_summary": {
-        "Positive": 1421,
-        "Negative": 668,
-        "Neutral": 5721
+        "Positive": 1409,
+        "Negative": 687,
+        "Neutral": 5801
     },
     "framing": {
-        "Fear & Escalation": 7071,
-        "Diplomacy & Calm": 739
+        "Fear & Escalation": 7143,
+        "Diplomacy & Calm": 754
     },
-    "avg_subjectivity": 21.2,
+    "avg_subjectivity": 21.0,
     "top_words": [
         {
             "text": "trump",
-            "value": 2338
+            "value": 2348
         },
         {
             "text": "ships",
-            "value": 1201
+            "value": 1215
         },
         {
             "text": "deal",
-            "value": 1082
+            "value": 1142
         },
         {
             "text": "talks",
-            "value": 814
+            "value": 832
         },
         {
             "text": "shipping",
-            "value": 801
-        },
-        {
-            "text": "strikes",
-            "value": 722
+            "value": 798
         },
         {
             "text": "oman",
-            "value": 716
+            "value": 760
+        },
+        {
+            "text": "strikes",
+            "value": 728
         },
         {
             "text": "open",
-            "value": 696
+            "value": 698
         },
         {
             "text": "prices",
-            "value": 664
+            "value": 661
         },
         {
             "text": "blockade",
-            "value": 651
+            "value": 656
         },
         {
             "text": "tankers",
-            "value": 640
+            "value": 641
         },
         {
             "text": "traffic",
-            "value": 634
+            "value": 630
         },
         {
             "text": "attacks",
-            "value": 570
-        },
-        {
-            "text": "reopen",
-            "value": 531
-        },
-        {
-            "text": "usiran",
-            "value": 521
+            "value": 562
         },
         {
             "text": "ship",
-            "value": 512
+            "value": 549
         },
         {
-            "text": "control",
-            "value": 511
+            "text": "reopen",
+            "value": 547
         },
         {
             "text": "tanker",
-            "value": 504
+            "value": 520
+        },
+        {
+            "text": "usiran",
+            "value": 519
+        },
+        {
+            "text": "control",
+            "value": 503
         },
         {
             "text": "iran’s",
-            "value": 498
+            "value": 482
         },
         {
             "text": "iranian",
-            "value": 492
+            "value": 473
         }
     ],
     "top_bigrams": [
         {
             "phrase": "Middle East",
-            "count": 285
+            "count": 288
         },
         {
             "phrase": "Trump Threatens",
-            "count": 152
+            "count": 158
         },
         {
             "phrase": "Anadolu Ajansı",
-            "count": 147
+            "count": 144
         },
         {
             "phrase": "Crude Prices",
-            "count": 117
+            "count": 118
         },
         {
             "phrase": "Yahoo Finance",
-            "count": 109
+            "count": 107
         }
     ],
     "top_orgs": [
         {
             "name": "Un",
-            "count": 184
-        },
-        {
-            "name": "Lng",
-            "count": 105
+            "count": 194
         },
         {
             "name": "Uae",
-            "count": 99
+            "count": 104
+        },
+        {
+            "name": "Lng",
+            "count": 102
         },
         {
             "name": "Pbs",
-            "count": 81
+            "count": 78
         },
         {
             "name": "Nato",
-            "count": 77
+            "count": 75
         },
         {
             "name": "Irgc",
-            "count": 63
-        },
-        {
-            "name": "Dw.Com",
-            "count": 48
+            "count": 71
         },
         {
             "name": "White House",
-            "count": 44
+            "count": 48
         },
         {
-            "name": "Us Navy",
+            "name": "Npr",
             "count": 40
         },
         {
             "name": "Navy",
+            "count": 40
+        },
+        {
+            "name": "Eu",
             "count": 38
         }
     ],
     "top_locations": [
         {
             "name": "Iran",
-            "count": 7097
+            "count": 7185
         },
         {
             "name": "United States",
-            "count": 4086
+            "count": 4100
         },
         {
             "name": "Oman",
-            "count": 658
+            "count": 702
         },
         {
             "name": "Tehran",
-            "count": 304
+            "count": 311
         },
         {
             "name": "China",
@@ -1444,7 +1458,7 @@ const HORMUZ_DATA = {
         },
         {
             "name": "France",
-            "count": 173
+            "count": 177
         },
         {
             "name": "Uk",
@@ -1452,67 +1466,62 @@ const HORMUZ_DATA = {
         },
         {
             "name": "Iraq",
-            "count": 128
+            "count": 126
         },
         {
             "name": "Israel",
-            "count": 125
+            "count": 117
         },
         {
             "name": "India",
-            "count": 99
+            "count": 94
         }
     ],
     "network_edges": [
         {
             "source": "Iran",
             "target": "United States",
-            "weight": 1352
+            "weight": 1361
         },
         {
             "source": "Iran",
             "target": "Trump",
-            "weight": 435
+            "weight": 450
         },
         {
             "source": "Iran",
             "target": "Oman",
-            "weight": 243
+            "weight": 267
         },
         {
             "source": "Trump",
             "target": "United States",
-            "weight": 235
+            "weight": 244
         },
         {
             "source": "Iran",
             "target": "Tehran",
-            "weight": 94
-        },
-        {
-            "source": "Tehran",
-            "target": "United States",
-            "weight": 63
+            "weight": 97
         },
         {
             "source": "France",
             "target": "Iran",
+            "weight": 65
+        },
+        {
+            "source": "Tehran",
+            "target": "United States",
             "weight": 61
         },
         {
             "source": "Hormuz Strait",
             "target": "Iran",
-            "weight": 51
+            "weight": 50
         },
         {
             "source": "Iran",
             "target": "Pbs",
-            "weight": 49
-        },
-        {
-            "source": "Iran",
-            "target": "Israel",
-            "weight": 48
+            "weight": 47
         },
         {
             "source": "Oman",
@@ -1520,9 +1529,14 @@ const HORMUZ_DATA = {
             "weight": 46
         },
         {
+            "source": "Iran",
+            "target": "Israel",
+            "weight": 45
+        },
+        {
             "source": "Pbs",
             "target": "United States",
-            "weight": 43
+            "weight": 41
         },
         {
             "source": "China",
@@ -1530,27 +1544,17 @@ const HORMUZ_DATA = {
             "weight": 36
         },
         {
-            "source": "Oman",
-            "target": "Trump",
+            "source": "Iran",
+            "target": "Uae",
             "weight": 36
         },
         {
-            "source": "Iran",
-            "target": "Uae",
+            "source": "Oman",
+            "target": "Trump",
             "weight": 35
         },
         {
             "source": "China",
-            "target": "United States",
-            "weight": 33
-        },
-        {
-            "source": "Iran",
-            "target": "Lebanon",
-            "weight": 33
-        },
-        {
-            "source": "Israel",
             "target": "United States",
             "weight": 32
         },
@@ -1560,19 +1564,39 @@ const HORMUZ_DATA = {
             "weight": 32
         },
         {
-            "source": "Dw.Com",
-            "target": "Iran",
-            "weight": 30
-        },
-        {
-            "source": "India",
-            "target": "Iran",
-            "weight": 29
+            "source": "Iran",
+            "target": "Lebanon",
+            "weight": 31
         },
         {
             "source": "Iran",
             "target": "Irgc",
+            "weight": 30
+        },
+        {
+            "source": "Israel",
+            "target": "United States",
+            "weight": 28
+        },
+        {
+            "source": "India",
+            "target": "Iran",
             "weight": 25
+        },
+        {
+            "source": "Iran",
+            "target": "Npr",
+            "weight": 23
+        },
+        {
+            "source": "Iran",
+            "target": "Uk",
+            "weight": 23
+        },
+        {
+            "source": "Tehran",
+            "target": "Trump",
+            "weight": 22
         },
         {
             "source": "France",
@@ -1581,33 +1605,28 @@ const HORMUZ_DATA = {
         },
         {
             "source": "Iran",
-            "target": "Npr",
-            "weight": 21
+            "target": "Qatar",
+            "weight": 22
         },
         {
             "source": "Iran",
-            "target": "Uk",
+            "target": "Un",
             "weight": 21
         },
         {
             "source": "Hormuz Strait",
             "target": "United States",
-            "weight": 21
-        },
-        {
-            "source": "Tehran",
-            "target": "Trump",
-            "weight": 21
-        },
-        {
-            "source": "Iran",
-            "target": "Un",
             "weight": 20
         },
         {
-            "source": "Iran",
-            "target": "Qatar",
-            "weight": 20
+            "source": "Dw.Com",
+            "target": "Iran",
+            "weight": 19
+        },
+        {
+            "source": "Irgc",
+            "target": "United States",
+            "weight": 19
         },
         {
             "source": "Cbc",
@@ -1615,9 +1634,29 @@ const HORMUZ_DATA = {
             "weight": 18
         },
         {
-            "source": "Irgc",
+            "source": "Npr",
             "target": "United States",
             "weight": 18
+        },
+        {
+            "source": "Oman",
+            "target": "Tehran",
+            "weight": 18
+        },
+        {
+            "source": "Hormuz Strait",
+            "target": "Trump",
+            "weight": 17
+        },
+        {
+            "source": "France",
+            "target": "Trump",
+            "weight": 17
+        },
+        {
+            "source": "Iran",
+            "target": "Pakistan",
+            "weight": 17
         },
         {
             "source": "Pbs",
@@ -1625,58 +1664,28 @@ const HORMUZ_DATA = {
             "weight": 16
         },
         {
-            "source": "Npr",
-            "target": "United States",
-            "weight": 16
-        },
-        {
-            "source": "Donald Trump",
-            "target": "United States",
-            "weight": 16
-        },
-        {
-            "source": "Iran",
-            "target": "Pakistan",
-            "weight": 16
-        },
-        {
-            "source": "Oman",
-            "target": "Tehran",
-            "weight": 16
-        },
-        {
-            "source": "India",
-            "target": "United States",
-            "weight": 15
-        },
-        {
-            "source": "Iran",
-            "target": "Videos",
-            "weight": 15
-        },
-        {
-            "source": "Hormuz Strait",
-            "target": "Trump",
-            "weight": 15
-        },
-        {
             "source": "Donald Trump",
             "target": "Iran",
             "weight": 15
         },
         {
-            "source": "France",
-            "target": "Trump",
-            "weight": 14
+            "source": "Iran",
+            "target": "Iraq",
+            "weight": 15
         },
         {
             "source": "Iran",
-            "target": "Iraq",
+            "target": "Videos",
             "weight": 14
         },
         {
-            "source": "Israel",
-            "target": "Lebanon",
+            "source": "Uk",
+            "target": "United States",
+            "weight": 14
+        },
+        {
+            "source": "Donald Trump",
+            "target": "United States",
             "weight": 14
         },
         {
@@ -1685,18 +1694,8 @@ const HORMUZ_DATA = {
             "weight": 14
         },
         {
-            "source": "Iran",
-            "target": "Switzerland",
-            "weight": 14
-        },
-        {
             "source": "Cna",
             "target": "Iran",
-            "weight": 13
-        },
-        {
-            "source": "Uk",
-            "target": "United States",
             "weight": 13
         },
         {
@@ -1713,116 +1712,131 @@ const HORMUZ_DATA = {
             "source": "China",
             "target": "Russia",
             "weight": 13
+        },
+        {
+            "source": "Israel",
+            "target": "Lebanon",
+            "weight": 13
+        },
+        {
+            "source": "China",
+            "target": "Trump",
+            "weight": 12
+        },
+        {
+            "source": "Iran",
+            "target": "Ndtv",
+            "weight": 12
         }
     ],
     "topics": [
         {
             "cluster": 0,
             "keywords": [
-                "strait",
+                "blockade",
                 "iran",
-                "ships",
+                "strait",
+                "trump",
+                "naval",
                 "says",
-                "war",
-                "strikes",
-                "news"
+                "ships"
             ]
         },
         {
             "cluster": 1,
             "keywords": [
-                "oil",
-                "prices",
+                "trump",
                 "strait",
                 "iran",
-                "tankers",
-                "tanker",
-                "crude"
+                "says",
+                "territory",
+                "deal",
+                "open"
             ]
         },
         {
             "cluster": 2,
             "keywords": [
-                "deal",
-                "oman",
-                "iran",
                 "strait",
-                "says",
-                "trump",
-                "talks"
+                "iran",
+                "oil",
+                "shipping",
+                "war",
+                "news",
+                "strikes"
             ]
         },
         {
             "cluster": 3,
             "keywords": [
-                "trump",
-                "strait",
                 "says",
+                "ships",
                 "iran",
-                "territory",
-                "open",
-                "blockade"
+                "strait",
+                "closed",
+                "oman",
+                "deal"
             ]
         }
     ],
     "media_bias": [
         {
             "source": "Reuters",
-            "count": 374,
+            "count": 393,
             "avg_sentiment": 0.02,
-            "avg_fear": 0.11
+            "avg_fear": 0.12
         },
         {
             "source": "Al Jazeera",
-            "count": 335,
+            "count": 343,
             "avg_sentiment": 0.03,
             "avg_fear": 0.16
         },
         {
-            "source": "Bloomberg.com",
-            "count": 328,
+            "source": "Bloomberg",
+            "count": 335,
             "avg_sentiment": 0.03,
             "avg_fear": 0.12
         },
         {
             "source": "CNBC",
-            "count": 321,
+            "count": 327,
             "avg_sentiment": 0.01,
             "avg_fear": 0.16
         },
         {
             "source": "The New York Times",
-            "count": 174,
+            "count": 175,
             "avg_sentiment": 0.09,
             "avg_fear": 0.18
         },
         {
+            "source": "Iran International",
+            "count": 154,
+            "avg_sentiment": 0.01,
+            "avg_fear": 0.09
+        },
+        {
             "source": "Anadolu Ajansı",
-            "count": 147,
+            "count": 144,
             "avg_sentiment": 0.01,
             "avg_fear": 0.07
         },
         {
             "source": "The Hill",
-            "count": 146,
+            "count": 142,
             "avg_sentiment": 0.01,
             "avg_fear": 0.07
         },
         {
-            "source": "Iran International",
-            "count": 140,
-            "avg_sentiment": 0.02,
-            "avg_fear": 0.09
-        },
-        {
             "source": "CBS News",
-            "count": 127,
+            "count": 130,
             "avg_sentiment": 0.03,
-            "avg_fear": 0.13
+            "avg_fear": 0.12
         },
         {
             "source": "The Guardian",
-            "count": 126,
+            "count": 128,
             "avg_sentiment": 0.01,
             "avg_fear": 0.23
         }
@@ -1836,31 +1850,31 @@ const HORMUZ_DATA = {
             "name": "Iran",
             "lat": 32.4279,
             "lon": 53.688,
-            "count": 7112
+            "count": 7202
         },
         {
             "name": "United States",
             "lat": 37.0902,
             "lon": -95.7129,
-            "count": 4112
+            "count": 4124
         },
         {
             "name": "Israel",
             "lat": 31.0461,
             "lon": 34.8516,
-            "count": 128
-        },
-        {
-            "name": "Oman",
-            "lat": 21.5126,
-            "lon": 55.9233,
-            "count": 658
+            "count": 120
         },
         {
             "name": "Russia",
             "lat": 61.524,
             "lon": 105.3188,
             "count": 48
+        },
+        {
+            "name": "Oman",
+            "lat": 21.5126,
+            "lon": 55.9233,
+            "count": 704
         },
         {
             "name": "China",
@@ -1872,31 +1886,31 @@ const HORMUZ_DATA = {
             "name": "Uae",
             "lat": 23.4241,
             "lon": 53.8478,
-            "count": 33
+            "count": 31
         },
         {
             "name": "Uk",
             "lat": 55.3781,
             "lon": -3.436,
-            "count": 181
+            "count": 182
         },
         {
             "name": "Iraq",
             "lat": 33.2232,
             "lon": 43.6793,
-            "count": 128
+            "count": 126
         },
         {
             "name": "Tehran",
             "lat": 35.6892,
             "lon": 51.389,
-            "count": 304
+            "count": 311
         },
         {
             "name": "Saudi Arabia",
             "lat": 23.8859,
             "lon": 45.0792,
-            "count": 51
+            "count": 47
         },
         {
             "name": "United Kingdom",
@@ -1908,19 +1922,19 @@ const HORMUZ_DATA = {
             "name": "Qatar",
             "lat": 25.3548,
             "lon": 51.1839,
-            "count": 71
-        },
-        {
-            "name": "Washington",
-            "lat": 38.9072,
-            "lon": -77.0369,
-            "count": 43
+            "count": 79
         },
         {
             "name": "Syria",
             "lat": 34.8021,
             "lon": 38.9968,
-            "count": 34
+            "count": 32
+        },
+        {
+            "name": "Washington",
+            "lat": 38.9072,
+            "lon": -77.0369,
+            "count": 40
         },
         {
             "name": "Yemen",
@@ -1932,43 +1946,43 @@ const HORMUZ_DATA = {
     "top_persons": [
         {
             "name": "Donald Trump",
-            "count": 1948
+            "count": 1965
         },
         {
             "name": "Hormuz Strait",
-            "count": 148
-        },
-        {
-            "name": "Bab El-Mandeb",
-            "count": 22
-        },
-        {
-            "name": "Asharq Al-Awsat",
-            "count": 20
+            "count": 156
         },
         {
             "name": "Seeking Alpha",
+            "count": 21
+        },
+        {
+            "name": "Bab El-Mandeb",
             "count": 20
         },
         {
-            "name": "Reopen Hormuz",
-            "count": 13
+            "name": "Asharq Al-Awsat",
+            "count": 19
         },
         {
-            "name": "Новини України",
-            "count": 11
+            "name": "Reopen Hormuz",
+            "count": 16
         },
         {
             "name": "Hormuz Blockade",
+            "count": 11
+        },
+        {
+            "name": "Hormuz Shipping",
             "count": 10
         },
         {
-            "name": "Marco Rubio",
-            "count": 8
+            "name": "Новини України",
+            "count": 9
         },
         {
-            "name": "Hormuz Exit",
-            "count": 8
+            "name": "Uss Lincoln",
+            "count": 9
         }
     ]
 };
